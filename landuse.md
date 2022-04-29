@@ -118,7 +118,7 @@ Con("aspect"<=337.5,60,
 Con("aspect"<=360,50,0))))))))))
 reclass_aspect.save("reclass_aspect")
 ```
-<iframe src="https://saaavsaaa.github.io/jax/t.html?a=%24%24%20J%28%5Ctheta%29%3D%5Csqrt%7B%5Cfrac%7B1%7D%7BN%7D%5Csum_%7Bi%3D1%7D%5E%7BN%7D%7B%28h_%5Ctheta%28x_i%29-y_i%29%5E2%7D%7D%20%24%24" height="100px" width="700px" frameborder="0" scrolling="no"> </iframe>
+
 
 
  <iframe src="https://giphy.com/embed/MCy7VesCtL2ZzPoSAI" width="480" height="352" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
