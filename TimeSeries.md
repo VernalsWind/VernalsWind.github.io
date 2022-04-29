@@ -1,4 +1,6 @@
-# 季节变动预测
+# 季节变动预测大作业
+## 吴蒙蔚
+## Matlab实现季节变动预测
 ```matlab
 length=input('please input data length');
 data=input('please input data');
@@ -89,8 +91,8 @@ else
 end
 end
 ```
-# C#季节变动预测
-```C#
+# C#实现季节变动预测
+```C
 Console.WriteLine("请输入数据长度");
 int length = Convert.ToInt32(Console.ReadLine());
 double[] n = new double[length];
