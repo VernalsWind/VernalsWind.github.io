@@ -34,17 +34,25 @@
 ## 数据处理方法：
  
 
-  
+ 
 
 ### Extract by Mask            
 ![m](/image/dem%E5%8C%BA%E5%9F%9F.jpg)                               
 ![dem](/image/ext_dem.jpg)                                               
 ### FeatureclassToFeatureclass 
  ![fea](/image/feature.jpg)                                           
-  ![tupian](/image/feature7.jpg)                                             
+  ![tupian](/image/feature7.jpg)  
+### Extract By Attribute 
+![屏幕截图 2022-04-29 221130.jpg](https://s2.loli.net/2022/04/29/YTZwcFGp4xhVkqd.jpg)
+![屏幕截图 2022-04-29 221130.jpg](https://s2.loli.net/2022/04/29/FNpjeLBJ6y49KEC.jpg)
+### 降水处理                  
+ ![prep](/image/%E9%99%8D%E6%B0%B4%E5%A4%84%E7%90%86.jpg)           
+ ![al_prep](/image/allprep.jpg)   
+ ![屏幕截图 2022-04-29 221130.jpg](https://s2.loli.net/2022/04/29/cuAUQEoFp59mOwD.jpg)
 ### 土壤处理                   
   ![Nraster](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg) 
-   ![soi](/image/soil_pro.jpg)                                                
+   ![soi](/image/soil_pro.jpg)  
+    ![cfltr](/image/soil_reclas.jpg) 
 ### 坡度坡向                   
  ![pos](/image/%E5%9D%A1%E5%BA%A6%E5%9D%A1%E5%90%91.jpg)              
   ![podu](/image/%E5%9C%B0%E5%9B%BE%E4%BB%A3%E6%95%B0%E5%9D%A1%E5%BA%A6.jpg) 
@@ -55,15 +63,12 @@
  ![caij](/image/%E7%A7%AF%E6%B8%A92.jpg)                              
   ![jiwen](/image/reclass_jiwen.jpg)                                         
 
-### 重分类土壤                 
- ![soil](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg)    
-  ![cfltr](/image/soil_reclas.jpg)                                           
+
+                                           
 ### 重分类坡度坡向             
 ![po](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9D%A1.jpg)               
-![asp](/image/aspect.jpg)                                                  
-### 降水处理                  
- ![prep](/image/%E9%99%8D%E6%B0%B4%E5%A4%84%E7%90%86.jpg)           
- ![al_prep](/image/allprep.jpg)                                            
+![屏幕截图 2022-04-29 221130.jpg](https://s2.loli.net/2022/04/29/oKanCykeJcAzGpg.jpg)                                               
+                                       
                                          
 
 
@@ -112,8 +117,8 @@
  
  用栅格计算器的条件函数反复嵌套来重分类坡度坡向,笨拙但有用且不失优雅，反而reclassify坡度坡向时，会报错，下面就是报错，我累了，我还是不知道为啥不能重分类
 
-_一开始我用了个非常lovely的方法:用栅格计算器的条件函数反复嵌套来重分类坡度坡向  发现还不错，反而reclassify坡度坡向时，会报错_
->>>>>>> 7176c23962232ce3edab7c3c6653bd6a4357ce66
+_一开始我用了个非常 lovely 的方法:用栅格计算器的条件函数反复嵌套来重分类坡度坡向  发现还不错，反而 reclassify 坡度坡向时，会报错_
+
 ```python
 remap=RemapRange([[0,22.5,50],
 [22.5,67.5,60],
@@ -129,7 +134,7 @@ reclass_aspect=Reclassify("aspect","Value",remap)
 reclass_aspect.save("reclass_aspect")
 ```
 >ERROR 000628: Cannot set input into parameter in_raster.
-<<<<<<< HEAD
+
 ## 代码流程
 
 ```python
