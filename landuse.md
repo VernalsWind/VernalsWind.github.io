@@ -27,7 +27,7 @@ table th:first-of-type {
     width:1pt;
 }
 table th:nth-of-type(2) {
-    width: 400pt;
+    width: 1000pt;
 }
 table th:nth-of-type(3) {
     width: 200pt;
@@ -78,7 +78,7 @@ table th:nth-of-type(3) {
 Reclassify("in_raster","field",remap)
 
 _一开始我用了个非常lovely的方法:用栅格计算器的条件函数反复嵌套来重分类坡度坡向  发现还不错，反而reclassify坡度坡向时，会报错_
-```
+```python
 remap=RemapRange([[0,22.5,50],
 [22.5,67.5,60],
 [67.5,112.5,80],
@@ -93,30 +93,135 @@ reclass_aspect=Reclassify("aspect","Value",remap)
 reclass_aspect.save("reclass_aspect")
 ```
 >ERROR 000628: Cannot set input into parameter in_raster.
+```python
 
-栅格计算器重分类坡度
-```
-reclass_slope=
-Con(slope<=2.0,100,
+import arcpy
+from arcpy.sa import *
+
+#--------通过sql的where语句"Name IN ('双鸭山市', '鹤岗市', '佳木斯市')"-------
+#--------从要素类到要素类----------------------------------------------------
+arcpy.FeatureClassToFeatureClass_conversion(
+    r"C:\Users\17503\Desktop\市界.shp",
+    r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb",
+    "city","Name IN ('双鸭山市', '鹤岗市', '佳木斯市')")
+#---------按属性提取 Globaland3土地利用栅格-----------------------------------------------
+attExtract = ExtractByAttributes("globaland30", "VALUE = 10") 
+attExtract.save(r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb\agriculture")
+#---------按掩膜提取三江平原三市的耕地栅格----------------------------------------------------
+etr_agriculture=ExtractByMask(attExtract,r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb\city")
+etr_agriculture.save("etr_agriculture")
+#------------------------------------按掩膜批量提取降水数据-----------------------------------------------
+
+extract=[]
+for i in range(5,10):
+    extract.append(ExtractByMask(r"C:\Users\17503\Downloads\wc21_30s_prec\wc21_30s_prec_0{i}.tif".format(i=i),
+                            r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb\etr_agriculture"))
+    
+#-------------------------相加栅格并重分类降水数据--------------------------------   
+
+all_prep=extract[0]+extract[1]+extract[2]+extract[3]+extract[4]
+all_prep.save(r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb\all_prep")
+remap=RemapRange([[0,450,70],[450,500,80],[500,550,90],[550,1000,100]])
+reclass_prep=Reclassify("all_prep","Value",remap)
+reclass_prep.save("reclass_prep")
+
+#--------------------------------------普通积温算法----------------
+from arcpy.analysis import *
+arcpy.env.workspace=r"C:\Users\17503\Downloads\Compressed\wc2.1_30s_tavg\积温"
+N1=Raster("wc21_30s_tavg_09(1).tif")
+N2=Raster("wc21_30s_tavg_09(2).tif")
+N3=Raster("wc21_30s_tavg_09(3).tif")
+N4=Raster("wc21_30s_tavg_09(4).tif")
+N5=Raster("wc21_30s_tavg_09(5).tif")
+out_ras=N1+N2+N3+N4+N5
+out_ras.save("output.tif")
+etr_temp=ExtractByMask("output.tif",
+r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb\etr_agriculture")
+etr_temp.save(r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb\etr_temp")
+
+#-------如果平均积温小于10，应该乘的天数，应小于30，平均气温越低，天数小于10的概率越大--------
+#-------设月平均气温是 n 且 n<10,则求积温时，乘天数为30*n/(10),即 3n-----------------------
+etr=[]
+for i in range(1,6):
+#循环：按掩膜提取，并存到数组etr里，python数组从0开始  
+    etr.append(ExtractByMask("wc21_30s_tavg_09({i}).tif".format(i=i),
+                     r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb\etr_agriculture"))
+  #Con函数判断月均气温是否小于10，如果是，则赋值3n^2，否则便直接=30n
+    etr[i-1]=Con(etr[i-1]<10,etr[i-1]*etr[i-1]*3,etr[i-1]*30)
+    etr[i-1].save(r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb\etr_tempr{i}".format(i=i))
+    
+out_temp2=etr[0]+etr[1]+etr[2]+etr[3]+etr[4]
+out_temp2.save(r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb\etrfinal")
+    
+#---------------积温重分类，Remap_Range映射:[start,end,value]把从 start到 end 之间的值映射成 value-------------------------    
+    
+    
+arcpy.env.workspace=r"C:\Users\17503\Documents\ArcGIS\Projects\MyProject1\MyProject1.gdb"
+remap=RemapRange([[0,2000,10],[2000,2200,30],[2200,2400,50],[2400,2600,70],[2600,3000,90]])
+Reclassify("etrfinal","Value",remap)
+reclass=Reclassify("etrfinal","Value",remap)
+reclass.save("reclass_temp")    
+
+
+#----------SoilData土壤数据先裁剪再通过PolygonToRaster栅格化，再重分类，反复4次--------------------------
+#----------------裁剪------------------------
+Clip(r"C:\Users\17503\Desktop\study\SoilData\土壤数据.shp","县clip","土clip")
+#------------按有机质栅格化，重分类------------
+arcpy.conversion.PolygonToRaster("土clip","有机质","yjw_ras")
+remap=RemapRange([[0,2,40],[2,4,50],[4,6,60],[6,8,80],[8,100,100]])
+reclass_yjw=Reclassify("yjw_ras","Value",remap)
+reclass_yjw.save("reclass_yjw")
+#------------按全磷栅格化，重分类------------
+arcpy.conversion.PolygonToRaster("土clip","全磷","ql_ras")
+remap=RemapRange([[0,0.05,40],[0.05,0.07,50],[0.07,0.1,60],[0.1,0.15,80],[0.15,100,100]])
+reclass_ql=Reclassify("ql_ras","Value",remap)
+reclass_ql.save("reclass_ql")
+#------------按全氮栅格化，重分类------------
+arcpy.conversion.PolygonToRaster("土clip","全氮","qN_ras")
+remap=RemapRange([[0,0.1,50],[0.1,0.2,60],[0.2,0.3,70],[0.3,0.4,80],[0.4,0.5,90],[0.5,100,100]])
+reclass_qN=Reclassify("qN_ras","Value",remap)
+reclass_qN.save("reclass_qN")
+#------------按全钾栅格化，重分类------------
+arcpy.conversion.PolygonToRaster("土clip","全钾","qK_ras")
+remap=RemapRange([[0,1.5,40],[1.5,1.9,50],[1.9,2.1,70],[2.1,2.5,80],[2.5,100,100]])
+reclass_qK=Reclassify("qK_ras","Value",remap)
+reclass_qK.save("reclass_qK")
+
+#----------坡度坡向---------------------
+#-------省略 Mosaic环节，对不起，"ASTGTMV003_N45E129_dem.tif"就是 Mosaic之后的 GDEM数据-----------
+extra_dem=ExtractByMask("ASTGTMV003_N45E129_dem.tif","县clip")
+extra_dem.save("extra_dem")
+#地图代数
+#-----------坡度----------
+slope=Slope("extra_dem")
+slope.save("slope")
+#----------坡向-----------
+aspect=Aspect("extra_dem")
+aspect.save("aspect")
+#----------根据Con函数逐步分类坡度-----------
+reclass_slope=Con(slope<=2.0,100,
 Con(slope<=6.0,80,
 Con(slope<=15.0,60,
 Con(slope<=25.0,40,20))))
 reclass_slope.save("reclass_slope")
-```
-坡向
-```
-reclass_aspect=
-Con( "aspect"<=-1.0,75,
-Con("aspect"<=22.5,50,
-Con("aspect"<=67.5,60,
-Con("aspect"<=112.5,80,
-Con("aspect"<=157.5,90,
-Con("aspect"<=202.5,100,
-Con("aspect"<=247.5,80,
-Con("aspect"<=292.5,70,
-Con("aspect"<=337.5,60,
-Con("aspect"<=360,50,0))))))))))
-reclass_aspect.save("reclass_aspect")
+#---------根据Con函数逐步分类坡向----------------------------
+reclass_aspect=Con(aspect<=-1.0,75,Con(aspect<=22.5,50,
+    Con(aspect<=67.5,60,Con(aspect<=112.5,80,
+        Con(aspect<=157.5,90,Con(aspect<=202.5,100,
+        Con(aspect<=247.5,80,
+        Con(aspect<=292.5,70,
+        Con(aspect<=337.5,60,
+        Con(aspect<=360,50,0))))))))))
+#-----------加权算总耕地质量栅格-------------------------
+quality=reclass_prep*0.1+reclass_aspect*0.05+reclass_slope*0.2+reclass*0.15+reclass_yjw*0.2+reclass_qK*0.1+reclass_qN*0.1+reclass_ql*0.1
+quality.save("quality")
+#------------自然断点法分割栅格------------------------
+outslice = Slice("quality",5,"NATURAL_BREAKS")
+outslice.save("outslice")
+#-----------分区统计-----------------------------------
+zonal=ZonalStatistics("县clip","OBJECTID",outslice,"MEAN")
+#-------------修改栅格大小：重采样--------------------------------------
+arcpy.Resample_management("Extract_outs1","outresample","0.000025 0.000025","NEAREST")
 ```
 
 
@@ -126,13 +231,3 @@ reclass_aspect.save("reclass_aspect")
  ![imath](/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-04-29%20172047.jpg)
 
 
-
-
-
-问题一：自然断点法分成五级
-
-
-
-
-问题二：要求空间分辨率为100m
-解决方法：Resample
