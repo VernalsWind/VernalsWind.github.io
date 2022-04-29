@@ -1,5 +1,5 @@
-#三江平原耕地质量实验报告
-[TOC]
+# 三江平原耕地质量实验报告
+
 ## 作者
 大家好，我是东北师范大学2020级吴蒙蔚，这是我大二下空间分析大作业，从4月23日世界读书日开始，到5月1日劳动节,我一直在肝这份作业，这些天，我一本书都没读，除了偶尔翻阅的《微观经济学》，我也没有任何体力劳动，我惭愧吗？我根本不在意节日，我只干我喜欢的事，我不喜欢这两个节日，所以我不管它，我记得小时候的童话说一个小镇，365天每天都是节日，这样反而让人没有那么喜欢节日，甚至厌烦了节日。节日是人自己找个理由去表达做作的情绪，因为今天是除夕，所以要开心，因为今天是清明，所以要伤心。对比中国传统节日，西方的、国际的节日，更是难以牵动我的神经。我小时候怀疑过，我的故作潇洒，是否是一种更深的做作。人就是做作的，做作才是真实，因为恐惧，所以做作，因为不敢表现恐惧，所以不敢表现做作。
 做作业的过程中，书本里抽象的概念变得生动起来，看似轻松的步骤方法，殊不知经历了多少人接力造轮子，不断封装复杂的算法，最后呈现出来简单的接口。弄懂复杂算法的意义在哪里，在于接下来的运用，数值分析课讲到了常微分方程的欧拉法，matlab一行代码可以得到结果，但老师带着我们推了一节课，结果重要吗？方法才是重点，思想才是闪闪发光之处，自然断点法，jenkspy包的几行代码就能实现，arcgis几下鼠标就能完成，可是我仍然觉得这个算法一定有推导一遍的意义
@@ -18,7 +18,7 @@
     - <img src="/image/GDEM.jpg" width=100/> 
 ### 2. Worldclim
   [2010-2018年各月降水](https://data.biogeo.ucdavis.edu/data/worldclim/v2.1/base/wc2.1_30s_prec.zip) ，[各月平均温度](https://data.biogeo.ucdavis.edu/data/worldclim/v2.1/base/wc2.1_30s_tavg.zip)
-## 3. 行政区数据来源 
+### 3. 行政区数据来源 
   因为是2021年9月下载的，所以不知道来源，这是文件——[谷歌云盘地址](
   https://drive.google.com/file/d/1ckfxhP74KSR9q2N1sR2lSATJIzFOWfLs/view?usp=sharing)
 ### 4. 土壤数据
@@ -29,34 +29,12 @@
   
 ## 数据处理分析工具：Arcgis pro
 
-<<<<<<< HEAD
-## 数据处理方法：
-=======
-##### 数据处理方法：
-<style>
-table th:first-of-type {
-    width:1pt;
-}
-table th:nth-of-type(2) {
-    width: 1000pt;
-}
-table th:nth-of-type(3) {
-    width: 200pt;
-}
-</style>
-| 方法                       | arcpy                                                                | 效果                                                                       |
-| -------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| FeatureclassToFeatureclass | ![fea](/image/feature.jpg)                                           | ![tupian](/image/feature7.jpg)                                             |
-| Extract by Mask            | ![m](/image/dem%E5%8C%BA%E5%9F%9F.jpg)                               | ![dem](/image/ext_dem.jpg)                                                 |
-| 降水处理                   | ![prep](/image/%E9%99%8D%E6%B0%B4%E5%A4%84%E7%90%86.jpg)             | ![al_prep](/image/allprep.jpg)                                             |
-| 积温初步方法               | ![yanmo](/image/%E7%A7%AF%E6%B8%A91.jpg)                             | ![jiwen3](/image/%E7%A7%AF%E6%B8%A93.jpg)                                  |
-| 积温天数比重法             | ![caij](/image/%E7%A7%AF%E6%B8%A92.jpg)                              | ![jiwen](/image/reclass_jiwen.jpg)                                         |
-| 土壤处理                   | ![Nraster](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg) | ![soi](/image/soil_pro.jpg)                                                |
-| 重分类土壤                 | ![soil](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg)    | ![cfltr](/image/soil_reclas.jpg)                                           |
-| 坡度坡向                   | ![pos](/image/%E5%9D%A1%E5%BA%A6%E5%9D%A1%E5%90%91.jpg)              | ![podu](/image/%E5%9C%B0%E5%9B%BE%E4%BB%A3%E6%95%B0%E5%9D%A1%E5%BA%A6.jpg) |
-| 重分类坡度坡向             | ![po](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9D%A1.jpg)               | ![asp](/image/aspect.jpg)                                                  |
->>>>>>> 7176c23962232ce3edab7c3c6653bd6a4357ce66
 
+
+## 数据处理方法：
+ 
+
+  
 
 ### Extract by Mask            
 ![m](/image/dem%E5%8C%BA%E5%9F%9F.jpg)                               
@@ -79,12 +57,13 @@ table th:nth-of-type(3) {
 
 ### 重分类土壤                 
  ![soil](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg)    
-  ![cfltr](/image/soil_reclas.jpg)                                           |
+  ![cfltr](/image/soil_reclas.jpg)                                           
 ### 重分类坡度坡向             
 ![po](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9D%A1.jpg)               
 ![asp](/image/aspect.jpg)                                                  
 ### 降水处理                  
- ![prep](/image/%E9%99%8D%E6%B0%B4%E5%A4%84%E7%90%86.jpg)              ![al_prep](/image/allprep.jpg)                                            
+ ![prep](/image/%E9%99%8D%E6%B0%B4%E5%A4%84%E7%90%86.jpg)           
+ ![al_prep](/image/allprep.jpg)                                            
                                          
 
 
@@ -124,13 +103,15 @@ table th:nth-of-type(3) {
 ![zonal](/image/zonal.jpg)
 ![zonal](/image/zonal2.jpg)
 
-<<<<<<< HEAD
+
 ### 重采样 
 ![rasample](/image/rasample7.jpg) 
 ![resample8](/image/resample8.jpg)
 ## 未解疑问
-用栅格计算器的条件函数反复嵌套来重分类坡度坡向,笨拙但有用且不失优雅，反而reclassify坡度坡向时，会报错，下面就是报错，我累了，我还是不知道为啥不能重分类
-=======
+
+ 
+ 用栅格计算器的条件函数反复嵌套来重分类坡度坡向,笨拙但有用且不失优雅，反而reclassify坡度坡向时，会报错，下面就是报错，我累了，我还是不知道为啥不能重分类
+
 _一开始我用了个非常lovely的方法:用栅格计算器的条件函数反复嵌套来重分类坡度坡向  发现还不错，反而reclassify坡度坡向时，会报错_
 >>>>>>> 7176c23962232ce3edab7c3c6653bd6a4357ce66
 ```python
@@ -150,8 +131,7 @@ reclass_aspect.save("reclass_aspect")
 >ERROR 000628: Cannot set input into parameter in_raster.
 <<<<<<< HEAD
 ## 代码流程
-=======
->>>>>>> 7176c23962232ce3edab7c3c6653bd6a4357ce66
+
 ```python
 
 import arcpy
@@ -282,13 +262,7 @@ zonal=ZonalStatistics("县clip","OBJECTID",outslice,"MEAN")
 #-------------修改栅格大小：重采样--------------------------------------
 arcpy.Resample_management("Extract_outs1","outresample","0.000025 0.000025","NEAREST")
 ```
-<<<<<<< HEAD
 
-
-
-
-
-=======
 
 
 
@@ -297,4 +271,3 @@ arcpy.Resample_management("Extract_outs1","outresample","0.000025 0.000025","NEA
  ![imath](/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-04-29%20172047.jpg)
 
 
->>>>>>> 7176c23962232ce3edab7c3c6653bd6a4357ce66
