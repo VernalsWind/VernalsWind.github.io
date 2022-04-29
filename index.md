@@ -3,6 +3,7 @@
 
 # 三江平原耕地质量
 <a href="/landuse1.md">作业</a>
+<a href="/landuse.html">homework</a>
 
 
 # 聚类
