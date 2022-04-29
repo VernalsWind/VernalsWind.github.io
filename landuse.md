@@ -271,8 +271,6 @@ arcpy.Resample_management("Extract_outs1","outresample","0.000025 0.000025","NEA
 
 
 
- <iframe src="https://giphy.com/embed/MCy7VesCtL2ZzPoSAI" width="480" height="352" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
- 
- ![imath](/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-04-29%20172047.jpg)
+
 
 
