@@ -2,7 +2,7 @@
 
 
 # 三江平原耕地质量
-<a href="/landuse">作业</a>
+<a href="/landuse1">作业</a>
 
 
 # 聚类
