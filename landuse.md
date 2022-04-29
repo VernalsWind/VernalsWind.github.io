@@ -29,7 +29,33 @@
   
 ## 数据处理分析工具：Arcgis pro
 
+<<<<<<< HEAD
 ## 数据处理方法：
+=======
+##### 数据处理方法：
+<style>
+table th:first-of-type {
+    width:1pt;
+}
+table th:nth-of-type(2) {
+    width: 1000pt;
+}
+table th:nth-of-type(3) {
+    width: 200pt;
+}
+</style>
+| 方法                       | arcpy                                                                | 效果                                                                       |
+| -------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| FeatureclassToFeatureclass | ![fea](/image/feature.jpg)                                           | ![tupian](/image/feature7.jpg)                                             |
+| Extract by Mask            | ![m](/image/dem%E5%8C%BA%E5%9F%9F.jpg)                               | ![dem](/image/ext_dem.jpg)                                                 |
+| 降水处理                   | ![prep](/image/%E9%99%8D%E6%B0%B4%E5%A4%84%E7%90%86.jpg)             | ![al_prep](/image/allprep.jpg)                                             |
+| 积温初步方法               | ![yanmo](/image/%E7%A7%AF%E6%B8%A91.jpg)                             | ![jiwen3](/image/%E7%A7%AF%E6%B8%A93.jpg)                                  |
+| 积温天数比重法             | ![caij](/image/%E7%A7%AF%E6%B8%A92.jpg)                              | ![jiwen](/image/reclass_jiwen.jpg)                                         |
+| 土壤处理                   | ![Nraster](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg) | ![soi](/image/soil_pro.jpg)                                                |
+| 重分类土壤                 | ![soil](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg)    | ![cfltr](/image/soil_reclas.jpg)                                           |
+| 坡度坡向                   | ![pos](/image/%E5%9D%A1%E5%BA%A6%E5%9D%A1%E5%90%91.jpg)              | ![podu](/image/%E5%9C%B0%E5%9B%BE%E4%BB%A3%E6%95%B0%E5%9D%A1%E5%BA%A6.jpg) |
+| 重分类坡度坡向             | ![po](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9D%A1.jpg)               | ![asp](/image/aspect.jpg)                                                  |
+>>>>>>> 7176c23962232ce3edab7c3c6653bd6a4357ce66
 
 
 ### Extract by Mask            
@@ -98,11 +124,15 @@
 ![zonal](/image/zonal.jpg)
 ![zonal](/image/zonal2.jpg)
 
+<<<<<<< HEAD
 ### 重采样 
 ![rasample](/image/rasample7.jpg) 
 ![resample8](/image/resample8.jpg)
 ## 未解疑问
 用栅格计算器的条件函数反复嵌套来重分类坡度坡向,笨拙但有用且不失优雅，反而reclassify坡度坡向时，会报错，下面就是报错，我累了，我还是不知道为啥不能重分类
+=======
+_一开始我用了个非常lovely的方法:用栅格计算器的条件函数反复嵌套来重分类坡度坡向  发现还不错，反而reclassify坡度坡向时，会报错_
+>>>>>>> 7176c23962232ce3edab7c3c6653bd6a4357ce66
 ```python
 remap=RemapRange([[0,22.5,50],
 [22.5,67.5,60],
@@ -118,7 +148,10 @@ reclass_aspect=Reclassify("aspect","Value",remap)
 reclass_aspect.save("reclass_aspect")
 ```
 >ERROR 000628: Cannot set input into parameter in_raster.
+<<<<<<< HEAD
 ## 代码流程
+=======
+>>>>>>> 7176c23962232ce3edab7c3c6653bd6a4357ce66
 ```python
 
 import arcpy
@@ -249,8 +282,19 @@ zonal=ZonalStatistics("县clip","OBJECTID",outslice,"MEAN")
 #-------------修改栅格大小：重采样--------------------------------------
 arcpy.Resample_management("Extract_outs1","outresample","0.000025 0.000025","NEAREST")
 ```
+<<<<<<< HEAD
 
 
 
 
 
+=======
+
+
+
+ <iframe src="https://giphy.com/embed/MCy7VesCtL2ZzPoSAI" width="480" height="352" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+ 
+ ![imath](/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-04-29%20172047.jpg)
+
+
+>>>>>>> 7176c23962232ce3edab7c3c6653bd6a4357ce66
