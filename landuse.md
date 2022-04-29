@@ -33,17 +33,17 @@ table th:nth-of-type(3) {
     width: 200pt;
 }
 </style>
-| 方法    |arcpy|效果                                     
-| ------------------- | -------------------------------------------------------------------- |----|
-|FeatureclassToFeatureclass|![fea](/image/feature.jpg)|![tupian](/image/feature7.jpg)
-| Extract by Mask | ![m](/image/dem%E5%8C%BA%E5%9F%9F.jpg)  |![dem](/image/ext_dem.jpg)                             |
-| 降水处理       | ![prep](/image/%E9%99%8D%E6%B0%B4%E5%A4%84%E7%90%86.jpg)                                                     |![al_prep](/image/allprep.jpg)|
-| 积温初步方法   | ![yanmo](/image/%E7%A7%AF%E6%B8%A91.jpg)                             |![jiwen3](/image/%E7%A7%AF%E6%B8%A93.jpg)
-| 积温天数比重法  | ![caij](/image/%E7%A7%AF%E6%B8%A92.jpg)                              |![jiwen](/image/reclass_jiwen.jpg)
-| 土壤处理        | ![Nraster](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg) |![soi](/image/soil_pro.jpg)|
-| 重分类土壤      | ![soil](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg) |![cfltr](/image/soil_reclas.jpg)   |
-| 坡度坡向    | ![pos](/image/%E5%9D%A1%E5%BA%A6%E5%9D%A1%E5%90%91.jpg)   |![podu](/image/%E5%9C%B0%E5%9B%BE%E4%BB%A3%E6%95%B0%E5%9D%A1%E5%BA%A6.jpg)           |
-| 重分类坡度坡向  | ![po](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9D%A1.jpg)               |![asp](/image/aspect.jpg)|
+| 方法                       | arcpy                                                                | 效果                                                                       |
+| -------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| FeatureclassToFeatureclass | ![fea](/image/feature.jpg)                                           | ![tupian](/image/feature7.jpg)                                             |
+| Extract by Mask            | ![m](/image/dem%E5%8C%BA%E5%9F%9F.jpg)                               | ![dem](/image/ext_dem.jpg)                                                 |
+| 降水处理                   | ![prep](/image/%E9%99%8D%E6%B0%B4%E5%A4%84%E7%90%86.jpg)             | ![al_prep](/image/allprep.jpg)                                             |
+| 积温初步方法               | ![yanmo](/image/%E7%A7%AF%E6%B8%A91.jpg)                             | ![jiwen3](/image/%E7%A7%AF%E6%B8%A93.jpg)                                  |
+| 积温天数比重法             | ![caij](/image/%E7%A7%AF%E6%B8%A92.jpg)                              | ![jiwen](/image/reclass_jiwen.jpg)                                         |
+| 土壤处理                   | ![Nraster](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg) | ![soi](/image/soil_pro.jpg)                                                |
+| 重分类土壤                 | ![soil](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9C%9F%E5%A3%A4.jpg)    | ![cfltr](/image/soil_reclas.jpg)                                           |
+| 坡度坡向                   | ![pos](/image/%E5%9D%A1%E5%BA%A6%E5%9D%A1%E5%90%91.jpg)              | ![podu](/image/%E5%9C%B0%E5%9B%BE%E4%BB%A3%E6%95%B0%E5%9D%A1%E5%BA%A6.jpg) |
+| 重分类坡度坡向             | ![po](/image/%E9%87%8D%E5%88%86%E7%B1%BB%E5%9D%A1.jpg)               | ![asp](/image/aspect.jpg)                                                  |
 
 
 
@@ -118,34 +118,19 @@ Con("aspect"<=337.5,60,
 Con("aspect"<=360,50,0))))))))))
 reclass_aspect.save("reclass_aspect")
 ```
-$$
-Q_j=\sum_{i=1}^{8}P_{i}\times W_i
-$$
-$Q_j$是第j个单元的综合得分，$P_i$为第i个指标因子量化得分，W_i是第i个指标因子权重系数，综合指数理论取值范围是[0,100],综合指数越大，单元耕地质量越高。
-$$\left[\begin{matrix}
-      a_{坡度}& a_{坡向}&a_{积温}&a_{降水}&a_{有机质}&a_{全氮}&a_{全磷}&a_{全钾}\\
-      b_{坡度}& b_{坡向}&b_{积温}&b_{降水}&b_{有机质}&b_{全氮}&b_{全磷}&b_{全钾}\\
-      &&&…
-  \end{matrix}\right]*
-\left[
- \begin{matrix}
-   坡度 & 0.2 \\
-   坡向 & 0.05 \\
-   积温 & 0.15\\
-   降水 & 0.1\\
-   有机质 &0.2\\
-   全氮&0.1\\
-   全磷&0.1\\
-   全钾&0.1\\
-  \end{matrix}\right]=\left[\begin{matrix}
-      a_{score}\\
-      b_{score}\\
-      …
-  \end{matrix}\right]
-$$
+<iframe src="https://saaavsaaa.github.io/jax/t.html?a=%24%24%20J%28%5Ctheta%29%3D%5Csqrt%7B%5Cfrac%7B1%7D%7BN%7D%5Csum_%7Bi%3D1%7D%5E%7BN%7D%7B%28h_%5Ctheta%28x_i%29-y_i%29%5E2%7D%7D%20%24%24" height="100px" width="700px" frameborder="0" scrolling="no"> </iframe>
+
+
+ <iframe src="https://giphy.com/embed/MCy7VesCtL2ZzPoSAI" width="480" height="352" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+ 
+ ![imath](/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-04-29%20172047.jpg)
+
+
+
+
 
 问题一：自然断点法分成五级
-方法一：
+
 
 
 
