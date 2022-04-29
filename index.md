@@ -1,7 +1,5 @@
 ## 吴蒙蔚
 
-四月十日我的心情非常好，又可以玩电脑，又以后前景好，谁不喜欢
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
