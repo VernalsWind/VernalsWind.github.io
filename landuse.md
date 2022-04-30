@@ -135,7 +135,7 @@ New class deviations are then calculated, and the process is repeated until the 
  
  用栅格计算器的条件函数反复嵌套来重分类坡度坡向,笨拙但有用且不失优雅，反而reclassify坡度坡向时，会报错，下面就是报错，我累了，我还是不知道为啥不能重分类
 
-_一开始我用了个非常 lovely 的方法:用栅格计算器的条件函数反复嵌套来重分类坡度坡向  发现还不错，反而 reclassify 坡度坡向时，会报错_
+
 
 ```python
 remap=RemapRange([[0,22.5,50],
