@@ -1,4 +1,4 @@
-# 三江平原耕地质量实验报告
+# 三江平原三市耕地质量实验报告
 [TOC]
 ## 作者
 大家好，我是东北师范大学2020级吴蒙蔚，这是我大二下空间分析大作业，从4月23日世界读书日开始，到5月1日劳动节,我一直在肝这份作业。
@@ -20,11 +20,12 @@
 
  
  
-
+## 研究区：
+## 双鸭山市，佳木斯市，鹤岗市
  ## 数据来源：
 
 
-### 1. [NASA earthdata搜索网站](https://search.earthdata.nasa.gov/search/)，可以用来查找GDEM数据
+### 1. [NASA earthdata](https://search.earthdata.nasa.gov/search/)，用来查找GDEM数据
    - IDM下载器[下载](https://www.internetdownloadmanager.cn/download)
    - 举例：N47 E132条带的GDEM数据 https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/ASTGTM.003/ASTGTMV003_N47E132_dem.tif
       （更改N,E后面数字可以获取其他经纬度的影像）
@@ -37,7 +38,7 @@
 ### 4. 土壤数据
   由郭笑怡老师提供——[谷歌云盘地址]（侵删）(https://drive.google.com/file/d/1koLqOBiK6T_KUlUT7OzyhThgSBR4HV19/view?usp=sharing)  
 ### 5. [GlobaLand30数据](http://www.globallandcover.com/)
-  所用条带：N52_45，N53_45  
+  #### 所用条带：N52_45，N53_45  
   
 ## 数据处理分析工具：Arcgis pro
 
@@ -130,6 +131,16 @@ New class deviations are then calculated, and the process is repeated until the 
 ### 重采样 
 ![rasample](/image/rasample7.jpg) 
 ![resample8](/image/resample8.jpg)
+### 计算权重
+![wei](image/weight.jpg)
+|OBJECTID |	Value	Count| Weight
+|-------------|------|--------
+1 级土地|1839|0.07
+2	级土地|6998|0.25
+3	级土地|	9212|0.34
+4 级土地	|	7044|0.26
+5 级土地	|	2178|0.08
+
 ## 未解疑问
 
  
@@ -286,7 +297,9 @@ zonal=ZonalStatistics("县clip","OBJECTID",outslice,"MEAN")
 arcpy.Resample_management("Extract_outs1","outresample","0.000025 0.000025","NEAREST")
 ```
 
-
+## 结果
+![lay](/Layout1.jpg)
+![loy1](/Layout2.jpg)
 
 
 
