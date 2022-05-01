@@ -1,5 +1,6 @@
 
 ## Determining nitrogen deficiencies for maize using various remote sensing indices
+[TOC]
 **核心思想**：想要得到某产量，用VI-yeild(植被指数-产量)线性回归方程得到不同时期的VI，将VI和相应的stage代入VI-(stage,N-rate)多元线性回归模型得到N-rate——>N-recommendations
 **背景**：
 N-rates： are established using two factors:**maize grain yield goal** and **soil texture**. 氮肥的比率，在阿肯色州247 $kg N\cdot  ha^{-1}$是100%，它和土壤质地共同影响最后的产量。换句话说，你可以根据土壤质地和目标产量确定你应该施肥的N_rate
@@ -19,7 +20,7 @@ N-recommendations based on conventional systems may not be applicable under the 
 或：VI和N-rate的关系随着玉米生长时期的不同有何变化
 (iii) the power of vegetation indices for **predicting maize grain yield** during vegetative and reproductive growth stages.
 在vegetative和reproductive期间测定的植被指数，能多大程度上预测最终玉米产量。
-### **选择maize growth stage** 
+### 选择maize growth stage
 选择的玉米生长时期是between the **V6** (six true, collared leaves)and **R4** (dough formation) growth stages
 原因：其他阶段不怎么吸收N，中后期植被覆盖和叶子变多，降低了土壤影响。65% of total N-uptake occurs between V6 and vegetative tasseling (VT) Approximately 20% of maize nitrogen demand is satisfied between VT and R3 (milk-like liquid present in kernels)
 Vegetative growth stages| |Reproductive growth stages||
