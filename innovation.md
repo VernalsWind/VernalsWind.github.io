@@ -49,7 +49,7 @@ first second季节不同，氮含量和两个因素有关：从土壤和肥料�
 先看氮含量随着DAT的变化曲线
 ![a0](图片1.png)
  1. Reflectance ->vegetation indices
-changes with N treatment(0,45,90,180)(kg N $ha^{-1}$) and DAT(day after transplanting)![a1](../图片.png)
+changes with N treatment(0,45,90,180)(kg N $ha^{-1}$) and DAT(day after transplanting)![a1](/图片.png)
 
 3. 二者的关系 
 N_Index ——  vegetation indices
@@ -58,7 +58,4 @@ N_Index ——  vegetation indices
 多元线性回归选择变量
 NDRI ,RECI ,MSAVI, CCVI ,GNDVI逐步回归得到 
 
-$$
-\text { N-Index }=1.188+0.356 \text { RECI }-1.586 \text { NDRI } \quad R^{2}=0.49
-$$ 
-- 
+![model](科创/model.jpg)
