@@ -1,13 +1,15 @@
+## Estimation of nitrogen status of paddy rice at vegetative phase using unmanned aerial vehicle based multispectral imagery
+[TOC]
 DAT：day after transplanting
 VI：vegetation indices
-目的：
+### 目的：
 - 由无人多光谱影像提取玉米波段反射率
 - 分析多个植被指数和氮指标在整个vegetation phase的相关性
 - 找到与N_Index相关性最大的VI组合和DAT,建立模型，输入参数是VI，DAT，输出参数是N_Index
 - 应用模型得到的N_Index，通过采样测SPAD找到，它和样本点SPAD的关系，从N_Index分布图推测整个样地的SPAD分布,知道整块样地的生长状况
 ![aa](总.png)
 
-### **part1:**
+### **part1:模型的建立和评估**
 一共8块地，每块地分成6份，3份用来建立多个模型，3份用来评估模型,选择模型。
 建模：
 1. 先找出在总的vegetation phase里，VI和N_index相关系数<0.1的六个植被指数。
@@ -19,7 +21,7 @@ VI：vegetation indices
 4. 检验：逐步回归法可能会过拟合，为此我们需要检验和评估，我们评判模型有很多指标，这篇论文选用 Root mean square error (RMSE)mean bias error (MBE)它们越小说明模型越好，通过这样找出最好的模型。
 
 
-### part2:
+### **part2模型的具体应用**:
 ![part2](part2.jpg)
 ![part12](part29.jpg)
 举例应用part1的模型，通过UAV影像处理得到DAT30,45,52时的估计N_index分布图
@@ -59,3 +61,9 @@ N_Index ——  vegetation indices
 NDRI ,RECI ,MSAVI, CCVI ,GNDVI逐步回归得到 
 
 ![model](科创/model.jpg)
+### 未来研究
+- 建立SPAD和N content的关系
+Although the SPAD value is merely a good surrogate for nitrogen status of rice plants, an actual plant nitrogen content map for more precise application rate decisions could be easily created once an operational relationship between SPAD values and plant nitrogen content has been established.
+  
+- 从氮含量——>叶子的氮浓度
+Future work will focus on building such an operational relationship.More studies should also focus on testing the developed model across different varieties and stress levels related to leaf N concentration to improve the robustness and applicability
