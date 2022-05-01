@@ -1,6 +1,7 @@
 ## 吴蒙蔚
 ### 最新论文笔记
 <a href="/innovation.html">Estimation of nitrogen status of paddy rice</a>
+<a href="科创/innov2.html">Determining nitrogen deficiencies for maize </a>
 ## 研究兴趣方向
 
 ### 土壤真菌生态学
