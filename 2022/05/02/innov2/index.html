@@ -16,32 +16,27 @@
   <meta name="author" content="吴蒙蔚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Estimation of nitrogen status of paddy rice at vegetative phase using unmanned aerial vehicle based multispectral imagery">
+    <meta name="description" content="用VI-yeild(植被指数-产量)线性回归方程,通过不同时期的VI预测产量，将VI和相应的stage代入VI-(stage,N-rate)多元线性回归模型得到N-rate——&gt;N-recommendations">
 <meta property="og:type" content="article">
-<meta property="og:title" content="论文">
-<meta property="og:url" content="http://example.com/2021/06/10/%E7%A7%91%E5%88%9B/index.html">
+<meta property="og:title" content="Determining nitrogen deficiencies for maize">
+<meta property="og:url" content="http://example.com/2022/05/02/innov2/index.html">
 <meta property="og:site_name" content="mengwei">
-<meta property="og:description" content="Estimation of nitrogen status of paddy rice at vegetative phase using unmanned aerial vehicle based multispectral imagery">
+<meta property="og:description" content="用VI-yeild(植被指数-产量)线性回归方程,通过不同时期的VI预测产量，将VI和相应的stage代入VI-(stage,N-rate)多元线性回归模型得到N-rate——&gt;N-recommendations">
 <meta property="og:locale">
-<meta property="og:image" content="http://example.com/2021/06/10/%E7%A7%91%E5%88%9B/%E6%80%BB.png">
-<meta property="og:image" content="http://example.com/part2.jpg">
-<meta property="og:image" content="http://example.com/part29.jpg">
-<meta property="og:image" content="http://example.com/part21.jpg">
-<meta property="og:image" content="http://example.com/part22.jpg">
-<meta property="og:image" content="http://example.com/part23.jpg">
-<meta property="og:image" content="http://example.com/part24.jpg">
-<meta property="og:image" content="http://example.com/%E5%9B%BE%E7%89%871.png">
-<meta property="og:image" content="http://example.com/%E5%9B%BE%E7%89%87.png">
-<meta property="og:image" content="http://example.com/%E7%A7%91%E5%88%9B/model.jpg">
-<meta property="article:published_time" content="2021-06-10T08:35:20.000Z">
-<meta property="article:modified_time" content="2022-05-02T08:35:46.189Z">
+<meta property="og:image" content="http://example.com/2022/05/02/innov2/arcgis.png">
+<meta property="og:image" content="http://example.com/2022/05/02/innov2/eq3.jpg">
+<meta property="og:image" content="http://example.com/2022/05/02/innov2/eq4.jpg">
+<meta property="og:image" content="http://example.com/2022/05/02/innov2/eq2.jpg">
+<meta property="og:image" content="http://example.com/2022/05/02/innov2/eq1.jpg">
+<meta property="article:published_time" content="2022-05-01T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-05-02T09:14:28.697Z">
 <meta property="article:author" content="吴蒙蔚">
-<meta property="article:tag" content="原创">
+<meta property="article:tag" content="note">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/2021/06/10/%E7%A7%91%E5%88%9B/%E6%80%BB.png">
+<meta name="twitter:image" content="http://example.com/2022/05/02/innov2/arcgis.png">
   
   
-  <title>论文 - mengwei</title>
+  <title>Determining nitrogen deficiencies for maize - mengwei</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -82,7 +77,11 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 6.1.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head>
 
 
 <body>
@@ -187,7 +186,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="论文">
+            <span class="h2" id="subtitle" title="Determining nitrogen deficiencies for maize">
               
             </span>
 
@@ -197,8 +196,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-06-10 16:35" pubdate>
-        June 10, 2021 pm
+      <time datetime="2022-05-02 00:00" pubdate>
+        May 2, 2022 am
       </time>
     </span>
   
@@ -208,7 +207,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      2.4k 字
+      1.9k 字
     </span>
   
 
@@ -217,7 +216,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      20 分钟
+      17 分钟
     </span>
   
 
@@ -246,51 +245,26 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">论文</h1>
+            <h1 style="display: none">Determining nitrogen deficiencies for maize</h1>
             
             <div class="markdown-body">
-              <h2 id="Estimation-of-nitrogen-status-of-paddy-rice-at-vegetative-phase-using-unmanned-aerial-vehicle-based-multispectral-imagery"><a href="#Estimation-of-nitrogen-status-of-paddy-rice-at-vegetative-phase-using-unmanned-aerial-vehicle-based-multispectral-imagery" class="headerlink" title="Estimation of nitrogen status of paddy rice at vegetative phase using unmanned aerial vehicle based multispectral imagery"></a>Estimation of nitrogen status of paddy rice at vegetative phase using unmanned aerial vehicle based multispectral imagery</h2><p><a href="聚类.html">聚类</a><br>DAT：day after transplanting<br>VI：vegetation indices</p>
-<h3 id="目的："><a href="#目的：" class="headerlink" title="目的："></a>目的：</h3><ul>
-<li>由无人多光谱影像提取玉米波段反射率</li>
-<li>分析多个植被指数和氮指标在整个vegetation phase的相关性</li>
-<li>找到与N_Index相关性最大的VI组合和DAT,建立模型，输入参数是VI，DAT，输出参数是N_Index</li>
-<li>应用模型得到的N_Index，通过采样测SPAD找到，它和样本点SPAD的关系，从N_Index分布图推测整个样地的SPAD分布,知道整块样地的生长状况<img src="/2021/06/10/%E7%A7%91%E5%88%9B/%E6%80%BB.png" srcset="/img/loading.gif" lazyload class="" title="图片引用方法一"></li>
-</ul>
-<h3 id="part1-模型的建立和评估"><a href="#part1-模型的建立和评估" class="headerlink" title="part1:模型的建立和评估"></a><strong>part1:模型的建立和评估</strong></h3><p>一共8块地，每块地分成6份，3份用来建立多个模型，3份用来评估模型,选择模型。<br>建模：</p>
-<ol>
-<li>先找出在总的vegetation phase里，VI和N_index相关系数&lt;0.1的六个植被指数。</li>
-<li>再拿这6个指数和N_index去找相关系数&gt;0.5的DAT</li>
-</ol>
-
-
-<ol>
-<li>但这样找出的6个VI不一定是独立的，可能其中的VI之间有相关性，所以用逐步回归法筛选变量。这样我们找到了很多模型。</li>
-<li>检验：逐步回归法可能会过拟合，为此我们需要检验和评估，我们评判模型有很多指标，这篇论文选用 Root mean square error (RMSE)mean bias error (MBE)它们越小说明模型越好，通过这样找出最好的模型。</li>
-</ol>
-<h3 id="part2模型的具体应用"><a href="#part2模型的具体应用" class="headerlink" title="part2模型的具体应用:"></a><strong>part2模型的具体应用</strong>:</h3><p><img src="/part2.jpg" srcset="/img/loading.gif" lazyload alt="part2"><br><img src="/part29.jpg" srcset="/img/loading.gif" lazyload alt="part12"><br>举例应用part1的模型，通过UAV影像处理得到DAT30,45,52时的估计N_index分布图</p>
-<p><img src="/part21.jpg" srcset="/img/loading.gif" lazyload alt="part12"></p>
-<p>在N_Index高、中和低的各个地方采样，测得这些样点的用SPAD测量植物生长的叶绿素浓度等类似指标，得到SPAD和N_Index的relationship</p>
-<p><img src="/part22.jpg" srcset="/img/loading.gif" lazyload alt="part22"></p>
-<p>然后就可以推算出整个样地的SPAD</p>
-<p><img src="/part23.jpg" srcset="/img/loading.gif" lazyload alt="part23"><br>The SPAD maps, provide the required information regarding the spatial distribution of nitrogen status in the field and could thus be used as a guide to variable rate application of nitrogen fertilizers by suitable machines (such as drones especially made for fertilization).<br>在SPAD较低的区域可以人工操作施加氮肥，在SPAD较低的阶段，施加氮肥</p>
-<p><img src="/part24.jpg" srcset="/img/loading.gif" lazyload alt="part24"><br>The SPAD meter measures the difference between the transmittance of a red (650 nm) and an infrared (940 nm) light through the leaf</p>
-<h3 id="Details"><a href="#Details" class="headerlink" title="Details"></a>Details</h3><ol>
-<li><p>N_content -&gt;N_Index<br>因为N content不仅受到施肥浓度的影响，随着生长，during the vegetation phase,N content是先增加后减小的，为了找氮含量数据和植被指数的一个不受时期影响的关系，我们找了一个空白对照组，不施氮肥的植物来去掉时间影响。$$<br>\mathrm{N} \text {-index }&#x3D;\mathrm{N} % &#x2F; \mathrm{N} %_{\text {ref }}<br>$$<br>where N% and N% ref are N content of plants to be evaluated and plants not receiving N<br>fertilizers, respectively.<br>first second季节不同，氮含量和两个因素有关：从土壤和肥料中的摄取，光合作用的干物质积累（消耗降低植物氮含量），一开始消耗速率低于吸收速率，消耗速率随着植物生长LAI叶面积指数增加而增加，当消耗速率增加到等于吸收速率时，氮元素含量达到顶峰，开始下降，因为春季吸收速率低于夏季，氮含量达峰的时期春季早于夏季。<br>先看氮含量随着DAT的变化曲线<br><img src="/%E5%9B%BE%E7%89%871.png" srcset="/img/loading.gif" lazyload alt="a0"></p>
-</li>
-<li><p>Reflectance -&gt;vegetation indices<br>changes with N treatment(0,45,90,180)(kg N $ha^{-1}$) and DAT(day after transplanting)<img src="/%E5%9B%BE%E7%89%87.png" srcset="/img/loading.gif" lazyload alt="a1"></p>
-</li>
-<li><p>二者的关系<br>N_Index ——  vegetation indices</p>
-</li>
-</ol>
-<p>多元线性回归选择变量<br>NDRI ,RECI ,MSAVI, CCVI ,GNDVI逐步回归得到 </p>
-<p><img src="/%E7%A7%91%E5%88%9B/model.jpg" srcset="/img/loading.gif" lazyload alt="model"></p>
-<h3 id="未来研究"><a href="#未来研究" class="headerlink" title="未来研究"></a>未来研究</h3><ul>
-<li><p>建立SPAD和N content的关系<br>Although the SPAD value is merely a good surrogate for nitrogen status of rice plants, an actual plant nitrogen content map for more precise application rate decisions could be easily created once an operational relationship between SPAD values and plant nitrogen content has been established.</p>
-</li>
-<li><p>从氮含量——&gt;叶子的氮浓度<br>Future work will focus on building such an operational relationship.More studies should also focus on testing the developed model across different varieties and stress levels related to leaf N concentration to improve the robustness and applicability</p>
-</li>
-</ul>
-
+              <h2 id="Determining-nitrogen-deficiencies-for-maize-using-various-remote-sensing-indices"><a href="#Determining-nitrogen-deficiencies-for-maize-using-various-remote-sensing-indices" class="headerlink" title="Determining nitrogen deficiencies for maize using various remote sensing indices"></a>Determining nitrogen deficiencies for maize using various remote sensing indices</h2><h3 id="核心思想："><a href="#核心思想：" class="headerlink" title="核心思想："></a><strong>核心思想</strong>：</h3><p>想要得到某产量，用VI-yeild(植被指数-产量)线性回归方程得到不同时期的VI，将VI和相应的stage代入VI-(stage,N-rate)多元线性回归模型得到N-rate——&gt;N-recommendations</p>
+<h3 id="背景："><a href="#背景：" class="headerlink" title="背景："></a><strong>背景</strong>：</h3><p>N-rates： are established using two factors:<strong>maize grain yield goal</strong> and <strong>soil texture</strong>. 氮肥的比率，在阿肯色州247 $kg N\cdot  ha^{-1}$是100%，它和土壤质地共同影响最后的产量。换句话说，你可以根据土壤质地和目标产量确定你应该施肥的N_rate</p>
+<p>N-recommendations based on conventional systems may not be applicable under the agricultural practices of <strong>no- or minimal tillage</strong>, <strong>winter cover crops</strong> and/or <strong>diverse crop rotations</strong>.这篇论文是在荒地、冬季覆土作物和其他各种各样的轮作上研究 N-recommendation</p>
+<h3 id="研究变量"><a href="#研究变量" class="headerlink" title="研究变量"></a><strong>研究变量</strong></h3><p>  <strong>nitrogen fertilizer rates</strong><br>  <strong>maize grain yield</strong><br>   <strong>maize growth stage</strong><br>   <strong>vegetation indices</strong><br> 研究N-rate、玉米作物产量、玉米生长时期、植被指数四个变量的关系</p>
+<h2 id="目的："><a href="#目的：" class="headerlink" title="目的："></a>目的：</h2><p>(i) the <strong>strengths and weaknesses of vegetation indices</strong> in detecting nitrogen fertilizer treatments,<br>植被指数能不能很好地检测判断N-rate氮肥的施肥方式？<br>(ii) <strong>the effect of maize growth stage</strong> on the relationship between vegetation index and nitrogen treatment<br>不同的玉米生长时期对VI和N-rate的关系的影响<br>或：VI和N-rate的关系随着玉米生长时期的不同有何变化<br>(iii) the power of vegetation indices for <strong>predicting maize grain yield</strong> during vegetative and reproductive growth stages.<br>在vegetative和reproductive期间测定的植被指数，能多大程度上预测最终玉米产量。</p>
+<h3 id="选择maize-growth-stage"><a href="#选择maize-growth-stage" class="headerlink" title="选择maize growth stage"></a>选择maize growth stage</h3><p>选择的玉米生长时期是between the <strong>V6</strong> (six true, collared leaves)and <strong>R4</strong> (dough formation) growth stages<br>原因：其他阶段不怎么吸收N，中后期植被覆盖和叶子变多，降低了土壤影响。65% of total N-uptake occurs between V6 and vegetative tasseling (VT) Approximately 20% of maize nitrogen demand is satisfied between VT and R3 (milk-like liquid present in kernels)<br>Vegetative growth stages| |Reproductive growth stages||<br>———|———-|———-|———-<br>VE| emergence |R1 |silking<br>V1| a first leaf| R2 |blister<br>V2 |second leaf |R3 |milk<br>V3 |third leaf |R4| dough<br>V(n)| nth leaf |R5 |dent<br>VT |tasseling |R6| physiological maturity</p>
+<h2 id="统计方法"><a href="#统计方法" class="headerlink" title="统计方法"></a>统计方法</h2><h3 id="一、线性回归"><a href="#一、线性回归" class="headerlink" title="一、线性回归"></a>一、线性回归</h3><blockquote>
+<p>Arcgis求每个plot的平均植被指数。<br><img src="/2022/05/02/innov2/arcgis.png" srcset="/img/loading.gif" lazyload class=""></p>
+</blockquote>
+<p>多元线性回归模型（VI-(stage,N-rate)）</p>
+<p>Y_i is the index value, $x_{iN−rate}$ is the nitrogen rate and$ x_{istage}$ is the growth stage<br>简单线性回归：因为stage和VI有较大的相关性，所以下面只是分析VI和N-rate对yield的影响</p>
+<p>$y_i$ is the maize grain yield and $x_{iindex}$ is the index value.</p>
+<h3 id="二、Saturation-analysis饱和点分析："><a href="#二、Saturation-analysis饱和点分析：" class="headerlink" title="二、Saturation analysis饱和点分析："></a>二、Saturation analysis饱和点分析：</h3><p>加大N-rate至产量不再变化，这个N-rate就是作物的饱和点，我们需要找到这个饱和点，如果VI和产量在同一N-rate处达到饱和，我们可以用这个VI的饱和点来确定作物的饱和点。</p>
+<img src="/2022/05/02/innov2/eq3.jpg" srcset="/img/loading.gif" lazyload class="">
+<img src="/2022/05/02/innov2/eq4.jpg" srcset="/img/loading.gif" lazyload class="">
+<img src="/2022/05/02/innov2/eq2.jpg" srcset="/img/loading.gif" lazyload class="">
+<img src="/2022/05/02/innov2/eq1.jpg" srcset="/img/loading.gif" lazyload class="">
             </div>
             <hr>
             <div>
@@ -299,7 +273,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/Java/">Java</a>
+                      <a class="hover-with-bg" href="/categories/UAV-RS/">UAV&RS</a>
                     
                   </div>
                 
@@ -307,7 +281,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%8E%9F%E5%88%9B/">原创</a>
+                      <a class="hover-with-bg" href="/tags/note/">note</a>
                     
                   </div>
                 
@@ -324,9 +298,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/05/02/landuse/">
+                      <a href="/2022/05/02/%E7%A7%91%E5%88%9B/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
+                        <span class="hidden-mobile">论文</span>
                         <span class="visible-mobile">Vorheriger</span>
                       </a>
                     
@@ -334,8 +308,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/06/10/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/">
-                        <span class="hidden-mobile">2020013199 吴蒙蔚</span>
+                      <a href="/2022/05/01/landuse/">
+                        <span class="hidden-mobile">三江平原耕地质量实验报告</span>
                         <span class="visible-mobile">Nächster</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
