@@ -3,18 +3,12 @@
 <a href="/innovation.html">Estimation of nitrogen status of paddy rice</a>
 
 <a href="科创/innov2.html">Determining nitrogen deficiencies for maize </a>
-## 研究兴趣方向
 
-### 土壤真菌生态学
 
-Most soil fungi form network-like shapes as they branch and grow,which inspires me so much.
-### 数据分析
-I have dreamed of being a data scientist, maybe spatial, maybe not.data science is not just ploting, calculating, aggregating, it is a kind of mindset about how we infer the facts and what is the cause and effect relationships.
-### GIS
-当我说喜欢GIS的时候，我在喜欢什么呢？也许是那种可以溜到别人的后院去玩耍的乐趣，GIS可以应用到很多领域，接触到很多未知的边界，把人，动物，植物，政治，一切一切，和它们所在的地域的关系展现出来。曾经有个名词叫“地图炮”说的是地域歧视和地域优越感，GIS告诉我地图这个炮弹，不是用来打击别人的，而是击穿我们看世界的偏见，凿向我们内心的冰川。
 
 ## 本学期的作业
-
+# 常微分方程的改进欧拉法---Matlab
+<a href="科创\数值分析\改进欧拉法.html">作业</a>
 # 三江平原耕地质量---Python
 
 
