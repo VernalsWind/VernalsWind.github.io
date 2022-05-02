@@ -1,0 +1,515 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-Hans" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="吴蒙蔚">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="编程纯原创，方法参考书和上课老师讲的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="季节变动预测大作业">
+<meta property="og:url" content="http://example.com/2022/05/02/%E5%AD%A3%E8%8A%82%E6%8C%87%E6%95%B0%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/index.html">
+<meta property="og:site_name" content="mengwei">
+<meta property="og:description" content="编程纯原创，方法参考书和上课老师讲的">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-05-02T07:05:43.433Z">
+<meta property="article:modified_time" content="2022-05-02T10:50:16.095Z">
+<meta property="article:author" content="吴蒙蔚">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  <title>季节变动预测大作业Hello, Welcome!mengwei</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"8EvckaW28cqHNDlMXzKCUVbT-gzGzoHsz","app_key":"bDXV2vtbKVgaLazPouuwrctY","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>主页</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                Startseite
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archiv
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Kategorie
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                Etiketten
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                Über mich
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="季节变动预测大作业">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-05-02 15:05" pubdate>
+        May 2, 2022 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      3.9k 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      33 分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">季节变动预测大作业</h1>
+            
+            <div class="markdown-body">
+              <h2 id="吴蒙蔚"><a href="#吴蒙蔚" class="headerlink" title="吴蒙蔚"></a>吴蒙蔚</h2><h2 id="Matlab实现季节变动预测"><a href="#Matlab实现季节变动预测" class="headerlink" title="Matlab实现季节变动预测"></a>Matlab实现季节变动预测</h2><figure class="highlight matlab"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></div></td><td class="code"><pre><code class="hljs matlab"><span class="hljs-built_in">length</span>=input(<span class="hljs-string">&#x27;please input data length&#x27;</span>);<br>data=input(<span class="hljs-string">&#x27;please input data&#x27;</span>);<br>out_arr(<span class="hljs-built_in">length</span>+<span class="hljs-number">1</span>)=<span class="hljs-number">0</span>;<br>data(<span class="hljs-built_in">length</span>+<span class="hljs-number">1</span>)=<span class="hljs-number">0</span>;<br>n(<span class="hljs-built_in">length</span>+<span class="hljs-number">1</span>)=<span class="hljs-number">0</span>;<br>s1(<span class="hljs-built_in">length</span>+<span class="hljs-number">1</span>)=<span class="hljs-number">0</span>;<br>s2(<span class="hljs-built_in">length</span>+<span class="hljs-number">1</span>)=<span class="hljs-number">0</span>;<br>a(<span class="hljs-built_in">length</span>+<span class="hljs-number">1</span>)=<span class="hljs-number">0</span>;<br>b(<span class="hljs-built_in">length</span>+<span class="hljs-number">1</span>)=<span class="hljs-number">0</span>;<br>nxi(<span class="hljs-built_in">length</span>+<span class="hljs-number">1</span>)=<span class="hljs-number">0</span>;<br><span class="hljs-comment">%读取数据</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:<span class="hljs-built_in">length</span><br>    n(<span class="hljs-built_in">i</span>)=data(<span class="hljs-built_in">i</span>);<br><span class="hljs-keyword">end</span><br><span class="hljs-comment">%三次滑动平均</span><br><span class="hljs-keyword">if</span> <span class="hljs-built_in">length</span>&lt;<span class="hljs-number">3</span><br>    <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:<span class="hljs-built_in">length</span><br>        out_arr(<span class="hljs-built_in">i</span>)=n(<span class="hljs-built_in">i</span>);<span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br><span class="hljs-comment">%我在这里把空缺值补全了</span><br><span class="hljs-keyword">if</span> <span class="hljs-built_in">length</span>&gt;=<span class="hljs-number">3</span><br>    out_arr(<span class="hljs-number">1</span>)=(<span class="hljs-number">5</span>*n(<span class="hljs-number">1</span>)+<span class="hljs-number">2</span>*n(<span class="hljs-number">2</span>)-n(<span class="hljs-number">3</span>))/<span class="hljs-number">6</span>;<br>     <span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">2</span>:<span class="hljs-built_in">length</span><span class="hljs-number">-1</span><br>         out_arr(<span class="hljs-built_in">i</span>)=(n(<span class="hljs-built_in">i</span>)+n(<span class="hljs-built_in">i</span><span class="hljs-number">-1</span>)+n(<span class="hljs-built_in">i</span>+<span class="hljs-number">1</span>))/<span class="hljs-number">3</span>;<br>     <span class="hljs-keyword">end</span><br>     out_arr(<span class="hljs-built_in">length</span>)=(<span class="hljs-number">5</span>*n(<span class="hljs-built_in">length</span>)+<span class="hljs-number">2</span>*n(<span class="hljs-built_in">length</span><span class="hljs-number">-1</span>)-n(<span class="hljs-built_in">length</span><span class="hljs-number">-2</span>))/<span class="hljs-number">6</span>;   <br><span class="hljs-keyword">end</span><br><span class="hljs-built_in">disp</span>(out_arr);<br><span class="hljs-comment">%相除得到粗略季节系数</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:<span class="hljs-built_in">length</span><br>    nxi(<span class="hljs-built_in">i</span>)=n(<span class="hljs-built_in">i</span>)/out_arr(<span class="hljs-built_in">i</span>);<br><span class="hljs-keyword">end</span><br><span class="hljs-comment">%校正</span><br>index=[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>];<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:<span class="hljs-built_in">length</span><br>    <span class="hljs-keyword">if</span> <span class="hljs-built_in">mod</span>(<span class="hljs-built_in">i</span>,<span class="hljs-number">4</span>)==<span class="hljs-number">1</span><br>        index(<span class="hljs-number">1</span>)=nxi(<span class="hljs-built_in">i</span>)+index(<span class="hljs-number">1</span>);<br>    <span class="hljs-keyword">end</span><br>    <span class="hljs-keyword">if</span> <span class="hljs-built_in">mod</span>(<span class="hljs-built_in">i</span>,<span class="hljs-number">4</span>)==<span class="hljs-number">2</span><br>        index(<span class="hljs-number">2</span>)=nxi(<span class="hljs-built_in">i</span>)+index(<span class="hljs-number">2</span>);<br>    <span class="hljs-keyword">end</span><br>        <br>    <span class="hljs-keyword">if</span> <span class="hljs-built_in">mod</span>(<span class="hljs-built_in">i</span>,<span class="hljs-number">4</span>)==<span class="hljs-number">3</span><br>        index(<span class="hljs-number">3</span>)=nxi(<span class="hljs-built_in">i</span>)+index(<span class="hljs-number">3</span>);<br>    <span class="hljs-keyword">end</span><br>     <span class="hljs-keyword">if</span> <span class="hljs-built_in">mod</span>(<span class="hljs-built_in">i</span>,<span class="hljs-number">4</span>)==<span class="hljs-number">0</span><br>        index(<span class="hljs-number">4</span>)=nxi(<span class="hljs-built_in">i</span>)+index(<span class="hljs-number">4</span>);<br>     <span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:<span class="hljs-number">4</span><br>    index(<span class="hljs-built_in">i</span>)=index(<span class="hljs-built_in">i</span>)/sum(index)*<span class="hljs-number">4</span>;<br><span class="hljs-keyword">end</span><br><span class="hljs-built_in">disp</span>(<span class="hljs-string">&quot;校正后的季节性指标&quot;</span>)<br><span class="hljs-built_in">disp</span>(index);<br><span class="hljs-comment">%二次指数平滑</span><br><br>al=input(<span class="hljs-string">&quot;请输入权重下降速度alpha&quot;</span>);<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">2</span>:<span class="hljs-built_in">length</span><br>   n(<span class="hljs-built_in">i</span>)=al*n(<span class="hljs-built_in">i</span>)+(<span class="hljs-number">1</span>-al)*n(<span class="hljs-built_in">i</span><span class="hljs-number">-1</span>);<br>   s1(<span class="hljs-built_in">i</span>)=n(<span class="hljs-built_in">i</span>);<br><span class="hljs-keyword">end</span><br><span class="hljs-built_in">disp</span>(s1);<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">2</span>:<span class="hljs-built_in">length</span><br> n(<span class="hljs-built_in">i</span>)=al*n(<span class="hljs-built_in">i</span>)+(<span class="hljs-number">1</span>-al)*n(<span class="hljs-built_in">i</span><span class="hljs-number">-1</span>);<br>   s2(<span class="hljs-built_in">i</span>)=n(<span class="hljs-built_in">i</span>);<br><span class="hljs-keyword">end</span><br><span class="hljs-built_in">disp</span>(s2);<br><span class="hljs-comment">%求模型a_t,b_t</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">2</span>:<span class="hljs-built_in">length</span><br>    a(<span class="hljs-built_in">i</span>)=<span class="hljs-number">2</span>*s1(<span class="hljs-built_in">i</span>)-s2(<span class="hljs-built_in">i</span>);<br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">2</span>:<span class="hljs-built_in">length</span><br>    b(<span class="hljs-built_in">i</span>)=al/(<span class="hljs-number">1</span>-al)*(s1(<span class="hljs-built_in">i</span>)-s2(<span class="hljs-built_in">i</span>));<br><span class="hljs-keyword">end</span><br><span class="hljs-built_in">disp</span>(<span class="hljs-string">&quot;a的值为&quot;</span>)<br><span class="hljs-built_in">disp</span>(a);<br><span class="hljs-built_in">disp</span>(<span class="hljs-string">&quot;b的值为&quot;</span>)<br><span class="hljs-built_in">disp</span>(b);<br>k=input(<span class="hljs-string">&quot;请输入预测的数据长度&quot;</span>);<br><span class="hljs-built_in">disp</span>(<span class="hljs-string">&quot;预测值为&quot;</span>)<br><span class="hljs-keyword">for</span> <span class="hljs-built_in">i</span>=<span class="hljs-number">1</span>:k<br>x=<span class="hljs-built_in">mod</span>(<span class="hljs-built_in">i</span>,<span class="hljs-number">4</span>);<br><span class="hljs-keyword">if</span> x==<span class="hljs-number">0</span><br>  <span class="hljs-built_in">disp</span>((a(<span class="hljs-built_in">length</span>)+b(<span class="hljs-built_in">length</span>)*<span class="hljs-built_in">i</span>)*index(<span class="hljs-number">4</span>));<br><span class="hljs-keyword">else</span><br>    <span class="hljs-built_in">disp</span>((a(<span class="hljs-built_in">length</span>)+b(<span class="hljs-built_in">length</span>)*<span class="hljs-built_in">i</span>)*index(x));<br><span class="hljs-keyword">end</span><br><span class="hljs-keyword">end</span><br></code></pre></td></tr></table></figure>
+<h1 id="C-实现季节变动预测"><a href="#C-实现季节变动预测" class="headerlink" title="C#实现季节变动预测"></a>C#实现季节变动预测</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><code class="hljs C">Console.WriteLine(<span class="hljs-string">&quot;请输入数据长度&quot;</span>);<br><span class="hljs-type">int</span> length = Convert.ToInt32(Console.ReadLine());<br><span class="hljs-type">double</span>[] n = new <span class="hljs-type">double</span>[length];<br><span class="hljs-type">double</span>[] nxi = new <span class="hljs-type">double</span>[length];<span class="hljs-comment">/*季节系数*/</span><br><br>Console.WriteLine(<span class="hljs-string">&quot;请输入所有数据&quot;</span>);<br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; length; i++)<br>&#123;<br>    n[i] = Convert.ToDouble(Console.ReadLine());<br>&#125;<br><span class="hljs-comment">/*  求三次滑动平均3*/</span><br><br><br> <span class="hljs-type">double</span>[] linearSmooth3(<span class="hljs-type">double</span>[] in_arr, <span class="hljs-type">int</span> N)<br>&#123;<br>    <span class="hljs-type">double</span>[] out_arr = new <span class="hljs-type">double</span>[in_arr.Length];<br>    <span class="hljs-type">int</span> i; <span class="hljs-keyword">if</span> (N &lt; <span class="hljs-number">3</span>)<br>    &#123;<br>        <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt;= N - <span class="hljs-number">1</span>; i++) &#123; out_arr[i] = in_arr[i]; &#125;<br>    &#125;<br>    <span class="hljs-keyword">else</span><br>    &#123;<br>        out_arr[<span class="hljs-number">0</span>] = (<span class="hljs-number">5.0</span> * in_arr[<span class="hljs-number">0</span>] + <span class="hljs-number">2.0</span> * in_arr[<span class="hljs-number">1</span>] - in_arr[<span class="hljs-number">2</span>]) / <span class="hljs-number">6.0</span>;<br>        <span class="hljs-keyword">for</span> (i = <span class="hljs-number">1</span>; i &lt;= N - <span class="hljs-number">2</span>; i++) &#123; out_arr[i] = (in_arr[i - <span class="hljs-number">1</span>] + in_arr[i] + in_arr[i + <span class="hljs-number">1</span>]) / <span class="hljs-number">3.0</span>; &#125;<br>        out_arr[N - <span class="hljs-number">1</span>] = (<span class="hljs-number">5.0</span> * in_arr[N - <span class="hljs-number">1</span>] + <span class="hljs-number">2.0</span> * in_arr[N - <span class="hljs-number">2</span>] - in_arr[N - <span class="hljs-number">3</span>]) / <span class="hljs-number">6.0</span>;<br>    &#125;<br>    <span class="hljs-keyword">return</span> out_arr;<br>&#125;<br><br>Console.WriteLine(<span class="hljs-string">&quot;这里是初步的季节系数&quot;</span>);<br><span class="hljs-comment">/*原数据除滑动平均数据*/</span><br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; n.Length; i++) &#123;<br>    Console.WriteLine(linearSmooth3(n, <span class="hljs-number">12</span>)[i]);<br>    nxi[i]=n[i] / linearSmooth3(n, <span class="hljs-number">12</span>)[i];<br>    Console.WriteLine(nxi[i]);<br><br>&#125;<br><span class="hljs-comment">/*季节性指标*/</span><br><span class="hljs-type">double</span> spring = nxi[<span class="hljs-number">0</span>] + nxi[<span class="hljs-number">4</span>] + nxi[<span class="hljs-number">8</span>];<br><span class="hljs-type">double</span> summer = nxi[<span class="hljs-number">1</span>] + nxi[<span class="hljs-number">5</span>] + nxi[<span class="hljs-number">9</span>];<br><span class="hljs-type">double</span> fall = nxi[<span class="hljs-number">2</span>] + nxi[<span class="hljs-number">6</span>] + nxi[<span class="hljs-number">10</span>];<br><span class="hljs-type">double</span> winter = nxi[<span class="hljs-number">3</span>] + nxi[<span class="hljs-number">7</span>] + nxi[<span class="hljs-number">11</span>];<br><span class="hljs-comment">/* 校正*/</span><br>Console.WriteLine(<span class="hljs-string">&quot;这里是校正后的季节指标&quot;</span>);<br><span class="hljs-type">double</span> sum=spring+summer+fall+winter;<br><span class="hljs-type">double</span> []index=new <span class="hljs-type">double</span>[n.Length];<br>index[<span class="hljs-number">0</span>] = spring / sum * <span class="hljs-number">4</span>;<br>index[<span class="hljs-number">1</span>]  = summer / sum * <span class="hljs-number">4</span>;<br>index[<span class="hljs-number">2</span>]= fall / sum * <span class="hljs-number">4</span>;<br>index[<span class="hljs-number">3</span>] = winter / sum*<span class="hljs-number">4</span>;<br>Console.WriteLine($<span class="hljs-string">&quot;&#123; index[0]&#125;,&#123; index[1]&#125;,&#123; index[2]&#125;,&#123; index[3]&#125;&quot;</span>);<br>Console.WriteLine(<span class="hljs-string">&quot;请输入权重下降的速度alpha&quot;</span>);<br><span class="hljs-type">double</span> alpha=Convert.ToDouble(Console.ReadLine());<br>Console.WriteLine(<span class="hljs-string">&quot;一次指数平滑&quot;</span>);<br><span class="hljs-comment">/*一次指数平滑*/</span><br><span class="hljs-type">double</span>[] n1=new <span class="hljs-type">double</span>[length];<br><span class="hljs-type">double</span>[] n2 = new <span class="hljs-type">double</span>[length];<br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt; length; i++)<br>&#123;<br>    n[i] =(<span class="hljs-number">1</span>-alpha)* n[i<span class="hljs-number">-1</span>] + (alpha) * n[i];<br>    n1[i] = n[i];<br>    Console.WriteLine($<span class="hljs-string">&quot;&#123;n[i]&#125;&quot;</span>);<br>&#125;<br><span class="hljs-comment">/*二次*/</span><br>Console.WriteLine(<span class="hljs-string">&quot;二次指数平滑&quot;</span>);<br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt; length; i++)<br>&#123;<br>    n[i] = (<span class="hljs-number">1</span> - alpha) * n[i - <span class="hljs-number">1</span>] + (alpha) * n[i];<br>    Console.WriteLine($<span class="hljs-string">&quot;&#123;n[i]&#125;&quot;</span>);<br>    n2[i] = n[i];<br>&#125;<br><span class="hljs-comment">/*模型的a,b*/</span><br>Console.WriteLine(<span class="hljs-string">&quot;模型的a,b&quot;</span>);<br><span class="hljs-type">double</span> a=<span class="hljs-number">2</span>*n1[length<span class="hljs-number">-1</span>]-n2[length<span class="hljs-number">-1</span>];<br><span class="hljs-type">double</span> b=alpha/(<span class="hljs-number">1</span>-alpha)*(n1[length<span class="hljs-number">-1</span>]-n2[length<span class="hljs-number">-1</span>]);<br>Console.WriteLine($<span class="hljs-string">&quot;&#123;a&#125;and&#123;b&#125;&quot;</span>);<br><span class="hljs-comment">/*预测*/</span><br>Console.WriteLine(<span class="hljs-string">&quot;请输入您将要往后预测的阶段数k&quot;</span>);<br><span class="hljs-type">double</span> k = Convert.ToDouble(Console.ReadLine());<br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt; k+<span class="hljs-number">1</span>; i++) &#123;<br>    <span class="hljs-type">double</span> y = (a + b * i) * index[(i<span class="hljs-number">-1</span>) % <span class="hljs-number">4</span>];<br>    Console.WriteLine(y);<br>&#125;<br></code></pre></td></tr></table></figure>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/05/02/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">2020013199 吴蒙蔚</span>
+                        <span class="visible-mobile">Vorheriger</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/05/01/%E7%A7%91%E5%88%9B/">
+                        <span class="hidden-mobile">论文</span>
+                        <span class="visible-mobile">Nächster</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"8EvckaW28cqHNDlMXzKCUVbT-gzGzoHsz","appKey":"bDXV2vtbKVgaLazPouuwrctY","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">Stichwort</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+        typing(title);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
