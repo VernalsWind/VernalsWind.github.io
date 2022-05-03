@@ -24,7 +24,7 @@
 <meta property="og:description" content="Estimation of nitrogen status of paddy rice at vegetative phase using unmanned aerial vehicle based multispectral imagery">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-05-01T08:35:20.000Z">
-<meta property="article:modified_time" content="2022-05-03T12:33:03.629Z">
+<meta property="article:modified_time" content="2022-05-03T12:53:39.696Z">
 <meta property="article:author" content="吴蒙蔚">
 <meta property="article:tag" content="note">
 <meta name="twitter:card" content="summary_large_image">
@@ -263,7 +263,7 @@
 ">[5]</span></a></sup>和生殖生长期中期R4(Reproductive growth stage 4)<sup id="fnref:5" class="footnote-ref"><a href="#fn:5" rel="footnote"><span class="hint--top hint--rounded" aria-label="Peter R. Thomison, Extension Agronomist. Identifying Vegetative Growth Stages in Corn(2016) https://ohioline.osu.edu/factsheet/agf-127
 ">[5]</span></a></sup>的无人机多光谱影像<sup id="fnref:3" class="footnote-ref"><a href="#fn:3" rel="footnote"><span class="hint--top hint--rounded" aria-label="Burns, B.W., Green, V.S., Hashem, A.A. et al. Determining nitrogen deficiencies for maize using various remote sensing indices. Precision Agric (2022). https://doi.org/10.1007/s11119-021-09861-4
 ">[3]</span></a></sup>，玉米整个生长时期氮素吸收量的85%以上都发生在这个阶段<sup id="fnref:4" class="footnote-ref"><a href="#fn:4" rel="footnote"><span class="hint--top hint--rounded" aria-label="English,E., Ketterings,Q., Czymmek,K.,Gabriel,A.,Flis, F.,&amp; Lawrence,J.(2017).Nitrogen uptake by corn Cornell University Cooperative Extension, Agronomy Fact Sheet Series (Fact Sheet #98), 1–2.
-">[4]</span></a></sup>。<br>3。每7天飞一次样地，通过无人机在V6——R4的各个时期得到近红外、红边、红、绿、蓝等反照率数据，用Pix4D Mapper 和 Agisoft LLC将影像拼接完整并生成geo-tiff文件，再将相同施肥方式的两个地块的数据合并和分区统计得到均值，然后根据相应波段得到植被指数，并得到该植被指数随时期变化的散点图。再重复计算其他指数。<br>4.在每次飞行前后使用算出修正凯氏测量法得到植物的总氮含量，用施氮肥的玉米的总氮含量除以未施氮肥的玉米总氮含量得到氮指数。最后制作氮指数随时期变化的散点图。<br>5.统计分析：对氮指数和每个植被指数分别进行相关分析，得到相关系数&gt;0.5的植被指数，再在V6——R4时期内找到这些植被指数与氮指数的相关系数&gt;0.7且区间最大的子时期。在这个子时期内运用逐步回归法筛选最好的植被指数组合及模型。<br>6.用检验模型地块得到的植被指数作为代入模型求得估计氮指数，再与检验模型地块的实际氮指数比较，评估模型优劣。</li>
+">[4]</span></a></sup>。<br>3。每7天飞一次样地，通过无人机在V6——R4的各个时期得到近红外、红边、红、绿、蓝等反照率数据，用Pix4D Mapper 和 Agisoft LLC将影像拼接完整并生成geo-tiff文件，再将相同施肥方式的两个地块的数据合并和分区统计得到均值，然后根据相应波段得到植被指数，并得到该植被指数随时期变化的散点图。再重复计算其他指数。<br>4.在每次飞行前后使用修正凯氏测量法得到植物的总氮含量，用施氮肥的玉米的总氮含量除以未施氮肥的玉米总氮含量得到氮指数。最后制作氮指数随时期变化的散点图。<br>5.统计分析：对氮指数和每个植被指数分别进行相关分析，得到相关系数&gt;0.5的植被指数，在V6——R4时期内找到这些植被指数与氮指数的相关系数&gt;0.7且区间最大的子时期。在这个子时期内运用逐步回归法筛选出最好的植被指数组合及模型。<br>6.用检验模型地块得到的植被指数作为代入模型求得估计氮指数，与其实际氮指数比较，对模型进行精度评定。</li>
 </ul>
 <h2 id="预期成果"><a href="#预期成果" class="headerlink" title="预期成果"></a>预期成果</h2><section class="footnotes"><h2>参考</h2><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>国际肥料工业协会IFA活性氮工作组.《农业氮素循环可持续管理与活性氮副效应缓解》
 <a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span>王静,杨晓光,吕硕,刘志娟,李克南,荀欣,刘园,王恩利.黑龙江省春玉米产量潜力及产量差的时空分布特征[J].中国农业科学,2012,45(10):1914-1925.
