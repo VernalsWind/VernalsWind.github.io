@@ -5,19 +5,6 @@
   
   <entry>
     <title>R语言</title>
-    <link href="/%E6%B5%8B%E8%AF%95/"/>
-    <url>/%E6%B5%8B%E8%AF%95/</url>
-    
-    <content type="html"><![CDATA[<p><a href="R空间自相关的变异函数.html">R空间自相关的变异函数</a><br><a href="聚类.html">聚类分析总结</a><br><a href="RPubs - 多元统计分析.html">R多元统计分析</a></p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>R语言</title>
     <link href="/stasticR/"/>
     <url>/stasticR/</url>
     
@@ -55,7 +42,7 @@
   
   
   <entry>
-    <title>季节变动预测大作业</title>
+    <title>timeseries</title>
     <link href="/timeseries/"/>
     <url>/timeseries/</url>
     

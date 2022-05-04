@@ -1,4 +1,3 @@
-https://vernalswind.github.io/%E6%B5%8B%E8%AF%95/
 https://vernalswind.github.io/stasticR/
 https://vernalswind.github.io/numeric/
 https://vernalswind.github.io/timeseries/
