@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vernalswind.github.io/timeseries/</loc>
+    <loc>https://vernalswind.github.io/innov2/</loc>
     
     <lastmod>2022-05-04</lastmod>
     
@@ -20,9 +20,18 @@
   </url>
   
   <url>
-    <loc>https://vernalswind.github.io/innov2/</loc>
+    <loc>https://vernalswind.github.io/landuse/</loc>
     
-    <lastmod>2022-05-02</lastmod>
+    <lastmod>2022-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vernalswind.github.io/timeseries/</loc>
+    
+    <lastmod>2022-05-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://vernalswind.github.io/stasticR/</loc>
-    
-    <lastmod>2022-05-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vernalswind.github.io/landuse/</loc>
     
     <lastmod>2022-05-02</lastmod>
     
