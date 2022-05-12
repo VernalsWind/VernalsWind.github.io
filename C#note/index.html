@@ -16,27 +16,25 @@
   <meta name="author" content="吴蒙蔚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1.建立VI--(stage,N-rate)多元线性回归模型，将VI和相应的stage代入VI-(stage,N-rate)多元线性回归模型得N-rate——&gt;N-recommendations，指导生产 2.建立 VI-yeild(植被指数-产量)线性回归方程,通过不同时期的VI预测产量">
+    <meta name="description" content="1.装箱和拆箱123int i&#x3D;0;System.Object obj&#x3D;i;&#x2F;&#x2F;装箱int j &#x3D;(int)obj;&#x2F;&#x2F;拆箱2.值类型和引用类型值类型变量是直接包含值。将一个值类型变量赋给另一个值类型变量，是复制包含的值，默认值是0.引用123456789101112131415161718192021222324252627282930313233343536373839404142434445">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Determining nitrogen deficiencies for maize">
-<meta property="og:url" content="https://vernalswind.github.io/innov2/index.html">
+<meta property="og:title" content="C#期末备考">
+<meta property="og:url" content="https://vernalswind.github.io/C#note/index.html">
 <meta property="og:site_name" content="mengwei">
-<meta property="og:description" content="1.建立VI--(stage,N-rate)多元线性回归模型，将VI和相应的stage代入VI-(stage,N-rate)多元线性回归模型得N-rate——&gt;N-recommendations，指导生产 2.建立 VI-yeild(植被指数-产量)线性回归方程,通过不同时期的VI预测产量">
+<meta property="og:description" content="1.装箱和拆箱123int i&#x3D;0;System.Object obj&#x3D;i;&#x2F;&#x2F;装箱int j &#x3D;(int)obj;&#x2F;&#x2F;拆箱2.值类型和引用类型值类型变量是直接包含值。将一个值类型变量赋给另一个值类型变量，是复制包含的值，默认值是0.引用123456789101112131415161718192021222324252627282930313233343536373839404142434445">
 <meta property="og:locale">
-<meta property="og:image" content="https://vernalswind.github.io/innov2/arcgis.png">
-<meta property="og:image" content="https://vernalswind.github.io/innov2/eq1.jpg">
-<meta property="og:image" content="https://vernalswind.github.io/innov2/eq2.jpg">
-<meta property="og:image" content="https://vernalswind.github.io/innov2/eq3.jpg">
-<meta property="og:image" content="https://vernalswind.github.io/innov2/eq4.jpg">
-<meta property="article:published_time" content="2022-04-30T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-05-04T13:35:48.130Z">
+<meta property="og:image" content="https://vernalswind.github.io/C#note%5Cconsole.jpg">
+<meta property="og:image" content="https://vernalswind.github.io/C#note%5Cref.png">
+<meta property="og:image" content="https://vernalswind.github.io/C#note%5Cval.png">
+<meta property="article:published_time" content="2022-05-11T07:20:35.000Z">
+<meta property="article:modified_time" content="2022-05-11T22:52:25.413Z">
 <meta property="article:author" content="吴蒙蔚">
-<meta property="article:tag" content="note">
+<meta property="article:tag" content="study">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vernalswind.github.io/innov2/arcgis.png">
+<meta name="twitter:image" content="https://vernalswind.github.io/C#note%5Cconsole.jpg">
   
   
-  <title>Determining nitrogen deficiencies for maizearticle - sitemengwei</title>
+  <title>C#期末备考article - sitemengwei</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -198,7 +196,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Determining nitrogen deficiencies for maize">
+            <span class="h2" id="subtitle" title="C#期末备考">
               
             </span>
 
@@ -217,7 +215,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.9k 字
+      1.1k 字
     </span>
   
 
@@ -226,7 +224,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      17 分钟
+      10 分钟
     </span>
   
 
@@ -263,101 +261,27 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Determining nitrogen deficiencies for maize</h1>
+            <h1 style="display: none">C#期末备考</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：8 days ago
+                  本文最后更新于：4 hours ago
                 
               </p>
             
             <div class="markdown-body">
-              <h2 id="Determining-nitrogen-deficiencies-for-maize-using-various-remote-sensing-indices"><a href="#Determining-nitrogen-deficiencies-for-maize-using-various-remote-sensing-indices" class="headerlink" title="Determining nitrogen deficiencies for maize using various remote sensing indices"></a>Determining nitrogen deficiencies for maize using various remote sensing indices</h2><h3 id="核心思想："><a href="#核心思想：" class="headerlink" title="核心思想："></a><strong>核心思想</strong>：</h3><ol>
-<li>建立VI-(stage,N-rate)多元线性回归模型，将VI和相应的stage代入VI-(stage,N-rate)多元线性回归模型得N-rate——&gt;N-recommendation，指导生产</li>
-<li>建立 VI-yeild(植被指数-产量)线性回归方程,通过不同时期的VI预测产量<h3 id="背景："><a href="#背景：" class="headerlink" title="背景："></a><strong>背景</strong>：</h3>N-rates： are established using two factors:<strong>maize grain yield goal</strong> and <strong>soil texture</strong>. 氮肥的比率，在阿肯色州247 $kg N\cdot  ha^{-1}$是100%，它和土壤质地共同影响最后的产量。换句话说，你可以根据土壤质地和目标产量确定你应该施肥的N_rate</li>
-</ol>
-<p>N-recommendations based on conventional systems may not be applicable under the agricultural practices of <strong>no- or minimal tillage</strong>, <strong>winter cover crops</strong> and/or <strong>diverse crop rotations</strong>.这篇论文是在荒地、冬季覆土作物和其他各种各样的轮作上研究 N-recommendation</p>
-<h3 id="研究变量"><a href="#研究变量" class="headerlink" title="研究变量"></a><strong>研究变量</strong></h3><p>  <strong>nitrogen fertilizer rates</strong><br>  <strong>maize grain yield</strong><br>   <strong>maize growth stage</strong><br>   <strong>vegetation indices</strong><br> 研究N-rate、玉米作物产量、玉米生长时期、植被指数四个变量的关系</p>
-<h2 id="目的："><a href="#目的：" class="headerlink" title="目的："></a>目的：</h2><p>(i) the <strong>strengths and weaknesses of vegetation indices</strong> in detecting nitrogen fertilizer treatments,<br>植被指数能不能很好地检测判断N-rate氮肥的施肥方式？<br>(ii) <strong>the effect of maize growth stage</strong> on the relationship between vegetation index and nitrogen treatment<br>不同的玉米生长时期对VI和N-rate的关系的影响<br>或：VI和N-rate的关系随着玉米生长时期的不同有何变化<br>(iii) the power of vegetation indices for <strong>predicting maize grain yield</strong> during vegetative and reproductive growth stages.<br>在vegetative和reproductive期间测定的植被指数，能多大程度上预测最终玉米产量。</p>
-<h3 id="选择maize-growth-stage"><a href="#选择maize-growth-stage" class="headerlink" title="选择maize growth stage"></a>选择maize growth stage</h3><p>选择的玉米生长时期是between the <strong>V6</strong> (six true, collared leaves)and <strong>R4</strong> (dough formation) growth stages<br>原因：其他阶段不怎么吸收N，中后期植被覆盖和叶子变多，降低了土壤影响。65% of total N-uptake occurs between V6 and vegetative tasseling (VT) Approximately 20% of maize nitrogen demand is satisfied between VT and R3 (milk-like liquid present in kernels)</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>Vegetative growth stages</th>
-<th></th>
-<th>Reproductive growth stages</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VE</td>
-<td>emergence</td>
-<td>R1</td>
-<td>silking</td>
-</tr>
-<tr>
-<td>V1</td>
-<td>a first leaf</td>
-<td>R2</td>
-<td>blister</td>
-</tr>
-<tr>
-<td>V2</td>
-<td>second leaf</td>
-<td>R3</td>
-<td>milk</td>
-</tr>
-<tr>
-<td>V3</td>
-<td>third leaf</td>
-<td>R4</td>
-<td>dough</td>
-</tr>
-<tr>
-<td>V(n)</td>
-<td>nth leaf</td>
-<td>R5</td>
-<td>dent</td>
-</tr>
-<tr>
-<td>VT</td>
-<td>tasseling</td>
-<td>R6</td>
-<td>physiological maturity</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="统计方法"><a href="#统计方法" class="headerlink" title="统计方法"></a>统计方法</h2><h3 id="一、线性回归"><a href="#一、线性回归" class="headerlink" title="一、线性回归"></a>一、线性回归</h3><blockquote>
-<p>Arcgis求每个plot的平均植被指数。<br><img src="/innov2/arcgis.png" srcset="/img/loading.gif" lazyload class=""></p>
-</blockquote>
-<p>多元线性回归模型（VI&lt;-(stage,N-rate)）</p>
-<img src="/innov2/eq1.jpg" srcset="/img/loading.gif" lazyload class="">
-<p>$Y_i$ is the index value, $x_{iN−rate} $is the nitrogen rate and $x_{istage}$ is the growth stage<br>简单线性回归：因为stage和VI有较大的相关性，所以下面只是分析VI和N-rate对yield的影响<br><img src="/innov2/eq2.jpg" srcset="/img/loading.gif" lazyload class=""></p>
-<p>$y_i$ is the maize grain yield and $x_{iindex}$ is the index value.</p>
-<h3 id="二、Saturation-analysis饱和点分析："><a href="#二、Saturation-analysis饱和点分析：" class="headerlink" title="二、Saturation analysis饱和点分析："></a>二、Saturation analysis饱和点分析：</h3><p>加大N-rate至产量不再变化，这个N-rate就是作物的饱和点，我们需要找到这个饱和点，如果VI和产量在同一N-rate处达到饱和，我们可以用这个VI的饱和点来确定作物的饱和点。</p>
-<img src="/innov2/eq3.jpg" srcset="/img/loading.gif" lazyload class="">
-<img src="/innov2/eq4.jpg" srcset="/img/loading.gif" lazyload class="">
+              <p>1.装箱和拆箱<br><figure class="highlight c#"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><pre><code class="hljs C#"><span class="hljs-built_in">int</span> i=<span class="hljs-number">0</span>;<br>System.Object obj=i;<span class="hljs-comment">//装箱</span><br><span class="hljs-built_in">int</span> j =(<span class="hljs-built_in">int</span>)obj;<span class="hljs-comment">//拆箱</span><br></code></pre></td></tr></table></figure><br>2.值类型和引用类型<br>值类型变量是直接包含值。将一个值类型变量赋给另一个值类型变量，是复制包含的值，默认值是0.<br>引用<br><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><code class="hljs C#"><span class="hljs-keyword">using</span> System;<br><span class="hljs-keyword">namespace</span> <span class="hljs-title">ConsoleApp1</span>&#123;<br><span class="hljs-comment"><span class="hljs-doctag">///</span><span class="hljs-doctag">&lt;summary&gt;</span></span><br><span class="hljs-comment"><span class="hljs-doctag">///</span>一个简单的引用类型</span><br><span class="hljs-comment"><span class="hljs-doctag">///</span><span class="hljs-doctag">&lt;/summary&gt;</span></span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">Ref</span><br>    &#123;<br>        <span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> iValue&#123;<span class="hljs-keyword">get</span>;<span class="hljs-keyword">set</span>;&#125;<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Ref</span>(<span class="hljs-params"><span class="hljs-built_in">int</span> i</span>)</span><br>        &#123;<br>        iValue=i;<br>        &#125;<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-built_in">string</span> <span class="hljs-title">ToString</span>()</span><br>        &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-string">$&quot;iValue 的值为：<span class="hljs-subst">&#123;iValue.ToString()&#125;</span>&quot;</span>;<br>        &#125;<br><br>    &#125;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">struct</span> Val<br>    &#123;<br>        <span class="hljs-keyword">public</span> <span class="hljs-built_in">int</span> Value&#123;<span class="hljs-keyword">get</span>;<span class="hljs-keyword">set</span>;&#125;<br><br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Val</span>(<span class="hljs-params"><span class="hljs-built_in">int</span> i</span>)</span><br>        &#123;<br>            Value=i;<br>        &#125;<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-built_in">string</span> <span class="hljs-title">ToString</span>()</span><br>        &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-string">$&quot;Value 的值为：<span class="hljs-subst">&#123;Value.ToString()&#125;</span>&quot;</span>;<br>        &#125;<br><br>    &#125;<br>    <span class="hljs-keyword">class</span> <span class="hljs-title">program</span><br>    &#123;<br>        <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">Main</span>(<span class="hljs-params"><span class="hljs-built_in">string</span>[] args</span>)</span><br>        &#123;   <span class="hljs-comment">//测试引用类型的赋值</span><br>            Ref ref1=<span class="hljs-keyword">new</span> Ref(<span class="hljs-number">1</span>);<br>            Ref ref2 = ref1;<br>            ref2.iValue=<span class="hljs-number">2</span>;<br>            <span class="hljs-comment">//测试值类型的赋值</span><br>            Val val1=<span class="hljs-keyword">new</span> Val(<span class="hljs-number">1</span>);<br>            Val val2=val1;<br>            val2.Value=<span class="hljs-number">2</span>;<br>            Console.WriteLine(<span class="hljs-string">$&quot;ref1:<span class="hljs-subst">&#123;ref1&#125;</span>&quot;</span>);<br>            Console.WriteLine(<span class="hljs-string">$&quot;ref2:<span class="hljs-subst">&#123;ref2&#125;</span>&quot;</span>);<br>            Console.WriteLine(<span class="hljs-string">$&quot;val1:<span class="hljs-subst">&#123;val1&#125;</span>&quot;</span>);<br>            Console.WriteLine(<span class="hljs-string">$&quot;val2:<span class="hljs-subst">&#123;val2&#125;</span>&quot;</span>);<br>            Console.ReadKey();<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><br><img src="/C#note%5Cconsole.jpg" srcset="/img/loading.gif" lazyload class=""><br><img src="/C#note%5Cref.png" srcset="/img/loading.gif" lazyload class=""><br><img src="/C#note%5Cval.png" srcset="/img/loading.gif" lazyload class=""></p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/UAV-RS/">UAV&RS</a>
-                    
-                  </div>
-                
                 
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/note/">note</a>
+                      <a class="hover-with-bg" href="/tags/study/">study</a>
                     
                   </div>
                 
@@ -368,15 +292,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/timeseries/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">timeseries</span>
-                        <span class="visible-mobile">Antaŭa afiŝo</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/RS-study/">
+                        <span class="hidden-mobile">Crop FSR Imagery Classification Algorithm</span>
+                        <span class="visible-mobile">Sekva afiŝo</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -577,48 +501,6 @@
 
 
 
-
-  
-
-  
-    <!-- MathJax -->
-    <script>
-      MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        },
-        loader: {
-          load: ['ui/lazy']
-        },
-        options: {
-          renderActions: {
-            findScript: [10, doc => {
-              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-                const display = !!node.type.match(/; *mode=display/);
-                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-                const text = document.createTextNode('');
-                node.parentNode.replaceChild(text, node);
-                math.start = { node: text, delim: '', n: 0 };
-                math.end = { node: text, delim: '', n: 0 };
-                doc.math.push(math);
-              });
-            }, '', false],
-            insertedScript: [200, () => {
-              document.querySelectorAll('mjx-container').forEach(node => {
-                let target = node.parentNode;
-                if (target.nodeName.toLowerCase() === 'li') {
-                  target.parentNode.classList.add('has-jax');
-                }
-              });
-            }, '', false]
-          }
-        }
-      };
-    </script>
-
-    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" ></script>
-
-  
 
 
 
