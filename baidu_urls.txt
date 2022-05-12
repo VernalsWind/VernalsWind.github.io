@@ -1,4 +1,4 @@
-https://vernalswind.github.io/C#note/
+https://vernalswind.github.io/C_note/
 https://vernalswind.github.io/RS-study/
 https://vernalswind.github.io/hydrology/
 https://vernalswind.github.io/landuse/
