@@ -24,7 +24,7 @@
 <meta property="og:description" content="PageRank算法想要知道一个网页 $W_i$的排序， 不仅要知道有多少网页链接了它， 而且还得知道那些网页各自的排序——因为来自排序靠前网页的链接更有分量。 但作为互联网大家庭的一员， $W_i$ 本身对其它网页的排序也是有贡献的， 而且基于来自排序靠前网页的链接更有分量的原则， 这种贡献与 $W_i$ 本身的排序也有关。 这样一来， 我们就陷入了一个 “先有鸡还是先有蛋” 的循环： 要想知道">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-06-09T10:13:34.000Z">
-<meta property="article:modified_time" content="2022-06-09T15:53:54.473Z">
+<meta property="article:modified_time" content="2022-06-09T15:55:57.992Z">
 <meta property="article:author" content="吴蒙蔚">
 <meta property="article:tag" content="homework">
 <meta name="twitter:card" content="summary_large_image">
@@ -261,7 +261,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：a few seconds ago
+                  本文最后更新于：a minute ago
                 
               </p>
             
@@ -277,7 +277,7 @@ p_i(n+1)=\sum_{j} p_j(n)p_{j->i}/N_{j}</script><p>我们将虚拟用户第 n 次
 <p> 第二次修正：直接跳转-素性修正<br> 他们假定， 虚拟用户虽然是虚拟的， 但多少也有一些 “性格”， 不会完全受当前网页所限， 死板地只访问其所提供的链接。 具体地说， 他们假定虚拟用户在每一步都有一个小于 1 的几率 $\alpha$访问当前网页所提供的链接， 同时却也有一个几率 $1-\alpha$ 不受那些链接所限， 随机访问互联网上的任何一个网站。（比如直接从书签栏访问网页）<br> 于是把上述 S 矩阵变成了一个新的矩阵 G：</p>
 <p> <script type="math/tex">G = \alpha S + (1-\alpha)ee^T/N</script>这个矩阵不仅是一个随机矩阵， 而且由于第二项的加盟， <strong>它有了一个新的特点， 即所有矩阵元都为正。 这样的矩阵是所谓的素矩阵 (primitive matrix)。 这一修正因此而被称为素性修正 (primitivity adjustment)</strong>。</p>
 <p>  $G^np_0$ 收敛速度的快慢是关系到算法是否实用的重要因素， 而这个因素恰恰与 $\alpha$ 有关。 可以证明， $\alpha$ 越小， $G^np_0$ 的收敛速度就越快。 但 $\alpha$ 也不能太小， 因为太小的话， “佩奇排序” 中最精华的部分， 即以网页间的彼此链接为基础的排序思路就被弱化了 (因为这部分的贡献正比于 $\alpha$)， 这显然是得不偿失的。 因此， 在 $\alpha$ 的选取上有很多折衷的考虑要做， 佩奇最终选择的数值是 $\alpha$ = 0.85。</p>
-<p>  p 其实是矩阵 G 的特征值为 1 的本征向量， 而利用虚拟用户确定网页排序的思路其实是在用迭代法解决上述特征值问题。 在数学上可以证明， 上述特征向量是唯一的， 而且 G 的其它特征值 $\lambda$ 全都满足 |$\lambda$|&lt;1 (更准确地说， 是 |$\lambda$|≤α ——这也正是  $G^np_0$ 的收敛速度与 $\alpha$ 有关的原因)。</p>
+<p>  p 其实是矩阵 G 的特征值为 1 的本征向量， 而利用虚拟用户确定网页排序的思路其实是在用迭代法解决上述特征值问题。 在数学上可以证明， 上述特征向量是唯一的， 而且 G 的其它特征值 $\lambda$ 全都满足 |$\lambda$|&lt;1 (更准确地说， 是 |$\lambda|≤ \alpha$——这也正是  $G^np_0$ 的收敛速度与 $\alpha$ 有关的原因)。</p>
 <p>这个算法就是谷歌排序的数学基础， 而其中的矩阵 G 则被称为谷歌矩阵 (Google matrix)。</p>
 
             </div>
