@@ -24,7 +24,7 @@
 <meta property="og:description" content="PageRank算法想要知道一个网页 $W_i$的排序， 不仅要知道有多少网页链接了它， 而且还得知道那些网页各自的排序——因为来自排序靠前网页的链接更有分量。 但作为互联网大家庭的一员， $W_i$ 本身对其它网页的排序也是有贡献的， 而且基于来自排序靠前网页的链接更有分量的原则， 这种贡献与 $W_i$ 本身的排序也有关。 这样一来， 我们就陷入了一个 “先有鸡还是先有蛋” 的循环： 要想知道">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-06-09T10:13:34.000Z">
-<meta property="article:modified_time" content="2022-06-09T15:41:09.596Z">
+<meta property="article:modified_time" content="2022-06-09T15:41:32.388Z">
 <meta property="article:author" content="吴蒙蔚">
 <meta property="article:tag" content="homework">
 <meta name="twitter:card" content="summary_large_image">
@@ -273,7 +273,7 @@
 p_i(n+1)=\sum_{j} p_j(n)p_{j->i}/N_{j}</script><p>我们将虚拟用户第 n 次浏览时访问各网页的几率合并为一个列向量 $p_n$， 它的第 i 个分量为  $p_i$(n)， 并引进一个只与互联网结构有关的矩阵 H， 它的第 i 行 j 列的矩阵元为 $H_{ij} = p_{j-&gt;i}/N_{j}$</p>
 <script type="math/tex; mode=display">p_{n+1} = Hp_n</script><p>上述公式描述的是一种马尔可夫过程 (Markov process)， 而且是其中最简单的一类， 即所谓的平稳马尔可夫过程 (stationary Markov process),而 H 则是描述马尔可夫过程中的转移概率分布的所谓转移矩阵 (transition matrix)。</p>
 <script type="math/tex; mode=display">p_n = H^np_0$$其中 $p_0$ 为虚拟读者初次浏览时访问各网页的几率分布 (在佩奇和布林的原始论文中， 这一几率分布被假定为是均匀分布)。
-##第一次修正：悬挂网页-随机性修正
+## 第一次修正：悬挂网页-随机性修正
 无论真实用户还是虚拟用户， 当他们访问到 “悬挂网页” 时， 都不应该，也不会 “在一棵树上吊死”， 而是会自行访问其它网页。 对于真实用户来说， 自行访问的网页显然与各人的兴趣有关， 但对于在平均意义上代表真实用户的虚拟用户来说， 佩奇假定它将会在整个互联网上随机选取一个网页进行访问。 用数学语言来说， 这相当于是把 H 的列向量中所有的零向量都换成 e/N (其中 e 是所有分量都为 1 的列向量， N 为互联网上的网页总数)。 如果我们引进一个描述 “悬挂网页” 的指标向量 (indicator vector) a， 它的第 i 个分量的取值视 $W_i$ 是否为 “悬挂网页” 而定——如果是 “悬挂网页”， 取值为 1， 否则为 0——并用 S 表示修正后的矩阵， 则：</script><p>S=H+ea^{T}/N</p>
 <p>$$</p>
 <p><strong>显然， 这样定义的 S 矩阵的每一列的矩阵元之和都是 1， 从而是一个不折不扣的随机矩阵。 这一修正因此而被称为随机性修正 (stochasticity adjustment)。</strong></p>
@@ -309,7 +309,7 @@ p_i(n+1)=\sum_{j} p_j(n)p_{j->i}/N_{j}</script><p>我们将虚拟用户第 n 次
                     
                       <a href="/reviewer/">
                         <span class="hidden-mobile">Review</span>
-                        <span class="visible-mobile">Nächster</span>
+                        <span class="visible-mobile">次の記事</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
                     
@@ -355,7 +355,7 @@ p_i(n+1)=\sum_{j} p_j(n)p_{j->i}/N_{j}</script><p>我们将虚拟用户第 n 次
     
       <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
         <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;ディレクトリ</p>
   <div class="toc-body" id="toc-body"></div>
 </div>
 
@@ -381,7 +381,7 @@ p_i(n+1)=\sum_{j} p_j(n)p_{j->i}/N_{j}</script><p>我们将虚拟用户第 n 次
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
+        <h4 class="modal-title w-100 font-weight-bold">検索</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -390,7 +390,7 @@ p_i(n+1)=\sum_{j} p_j(n)p_{j->i}/N_{j}</script><p>我们将虚拟用户第 n 次
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
           <label data-error="x" data-success="v"
-                 for="local-search-input">Stichwort</label>
+                 for="local-search-input">キーワード</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
