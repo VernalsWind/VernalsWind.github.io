@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://vernalswind.github.io/PageRank/</loc>
+    <lastmod>2022-06-09</lastmod>
+  </url>
+  <url>
     <loc>https://vernalswind.github.io/reviewer/</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-09</lastmod>
   </url>
   <url>
     <loc>https://vernalswind.github.io/sopho/</loc>

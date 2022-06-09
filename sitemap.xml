@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vernalswind.github.io/PageRank/</loc>
+    
+    <lastmod>2022-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vernalswind.github.io/reviewer/</loc>
     
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -112,7 +121,7 @@
 
   <url>
     <loc>https://vernalswind.github.io/</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -120,21 +129,28 @@
   
   <url>
     <loc>https://vernalswind.github.io/tags/note/</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/tags/study/</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/tags/assignment/</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://vernalswind.github.io/tags/homework/</loc>
+    <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -143,21 +159,21 @@
   
   <url>
     <loc>https://vernalswind.github.io/categories/UAV-RS/</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/categories/matlab/</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/categories/GIS/</loc>
-    <lastmod>2022-05-20</lastmod>
+    <lastmod>2022-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
