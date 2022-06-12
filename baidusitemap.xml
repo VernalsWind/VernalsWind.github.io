@@ -2,7 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vernalswind.github.io/delegate/</loc>
-    <lastmod>2022-06-10</lastmod>
+    <lastmod>2022-06-12</lastmod>
+  </url>
+  <url>
+    <loc>https://vernalswind.github.io/cityGeo/</loc>
+    <lastmod>2022-06-11</lastmod>
+  </url>
+  <url>
+    <loc>https://vernalswind.github.io/Soil/</loc>
+    <lastmod>2022-06-11</lastmod>
   </url>
   <url>
     <loc>https://vernalswind.github.io/PageRank/</loc>
