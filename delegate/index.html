@@ -16,15 +16,15 @@
   <meta name="author" content="吴蒙蔚">
   <meta name="keywords" content="">
   
-    <meta name="description" content="delegate代表，可以理解成，函数指针，方法的家庭地址，**可以通过它找到方法，指代方法**，我们要找一个人做核酸，就像程序要调用一个方法，我们不知道这个人的名字，那么我们去他的家庭住址找他，拿着大喇叭喊：402的住户做核酸了吗？如果知道名字我们就喊：熊大你做核酸了吗？402就是地址啦！熟悉C语言的同学们听说过一切皆地址吧。402就像一个delegate，有了他，就可以叫住在402的熊大或者熊">
+    <meta name="description" content="delegate代表，可以理解成，函数指针（C语言，C#没有完全抛弃指针的表现,java完全抛却了），方法的家庭地址，可以通过它找到方法，指代方法。我们要找一个人做核酸，就像程序要调用一个方法，我们不知道这个人的名字，那么我们去他的家庭住址找他，拿着大喇叭喊：402的住户做核酸了吗？如果知道名字我们就喊：熊大你做核酸了吗？402就是地址啦！熟悉C语言的同学们听说过一切皆地址吧。402就像一个del">
 <meta property="og:type" content="article">
 <meta property="og:title" content="委托C#详解">
 <meta property="og:url" content="https://vernalswind.github.io/delegate/index.html">
 <meta property="og:site_name" content="mengwei">
-<meta property="og:description" content="delegate代表，可以理解成，函数指针，方法的家庭地址，**可以通过它找到方法，指代方法**，我们要找一个人做核酸，就像程序要调用一个方法，我们不知道这个人的名字，那么我们去他的家庭住址找他，拿着大喇叭喊：402的住户做核酸了吗？如果知道名字我们就喊：熊大你做核酸了吗？402就是地址啦！熟悉C语言的同学们听说过一切皆地址吧。402就像一个delegate，有了他，就可以叫住在402的熊大或者熊">
+<meta property="og:description" content="delegate代表，可以理解成，函数指针（C语言，C#没有完全抛弃指针的表现,java完全抛却了），方法的家庭地址，可以通过它找到方法，指代方法。我们要找一个人做核酸，就像程序要调用一个方法，我们不知道这个人的名字，那么我们去他的家庭住址找他，拿着大喇叭喊：402的住户做核酸了吗？如果知道名字我们就喊：熊大你做核酸了吗？402就是地址啦！熟悉C语言的同学们听说过一切皆地址吧。402就像一个del">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-06-10T03:48:49.000Z">
-<meta property="article:modified_time" content="2022-06-13T13:22:09.507Z">
+<meta property="article:modified_time" content="2022-06-13T13:25:42.632Z">
 <meta property="article:author" content="吴蒙蔚">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -260,7 +260,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：a few seconds ago
+                  本文最后更新于：6 days ago
                 
               </p>
             
@@ -284,7 +284,7 @@
                       <a href="/cityGeo/">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">城市地理学复习</span>
-                        <span class="visible-mobile">Previous</span>
+                        <span class="visible-mobile">Vorheriger</span>
                       </a>
                     
                   </article>
@@ -293,7 +293,7 @@
                     
                       <a href="/PageRank/">
                         <span class="hidden-mobile">PageRank</span>
-                        <span class="visible-mobile">Next</span>
+                        <span class="visible-mobile">Nächster</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
                     
@@ -365,7 +365,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -374,7 +374,7 @@
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
           <label data-error="x" data-success="v"
-                 for="local-search-input">keyword</label>
+                 for="local-search-input">Stichwort</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
