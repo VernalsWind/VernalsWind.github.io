@@ -1,3 +1,5 @@
+https://vernalswind.github.io/database/
+https://vernalswind.github.io/geodata/
 https://vernalswind.github.io/biogeo/
 https://vernalswind.github.io/zjksoil/
 https://vernalswind.github.io/Soil/
