@@ -4,11 +4,24 @@
   
   
   <entry>
+    <title>rs_digital_img</title>
+    <link href="/rs-digital-img/"/>
+    <url>/rs-digital-img/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>最近的防忘小tip</title>
     <link href="/github/"/>
     <url>/github/</url>
     
-    <content type="html"><![CDATA[<ul><li>有一种消极的说法，生活原本是苦痛的，遇到的朋友，吃过的美食,收获的爱都是人生的止痛剂。<h1 id="ENVI-5-3安装"><a href="#ENVI-5-3安装" class="headerlink" title="ENVI 5.3安装"></a>ENVI 5.3安装</h1></li><li>{hi，这是我用百度网盘分享的内容~复制这段内容打开「百度网盘」APP即可获取<br>链接:<a href="https://pan.baidu.com/s/1NbbU76LZmGAHJlpo-6WUgw?pwd=7pm1">https://pan.baidu.com/s/1NbbU76LZmGAHJlpo-6WUgw?pwd=7pm1</a><br>提取码:7pm1<br>}</li><li>常规步骤，最后用文件夹里的license.lic文件可以激活，然后复制idl.dll文件<img src="/github/idl.jpg" class=""></li><li>到安装文件夹下<img src="/github/idl2.jpg" class=""></li></ul><h1 id="github连接超时"><a href="#github连接超时" class="headerlink" title="github连接超时"></a>github连接超时</h1><p>要用管理员权限打开cmd，然后进入hosts文件，修改<img src="/github/hosts.jpg" class=""></p><ul><li>进入这个网址得到github对应的地址 <a href="https://ipaddress.com/website/www.github.com">https://ipaddress.com/website/www.github.com</a></li><li>修改hosts文件，在末尾加上类似一个ip 一个domain的形式就可以了<figure class="highlight accesslog"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs accesslog"><span class="hljs-number">140.82.113.3</span>  github.com    <br><span class="hljs-number">192.30.253.113</span>  www.github.com<br></code></pre></td></tr></table></figure></li><li>cmd中输入ipconfig/flushdns刷新dns</li><li>什么原理 Domain name system <img src="/github/dns.png" class=""></li></ul><ul><li>git拉取</li><li><p>“origin” 并无特殊含义<br>远程仓库名字 “origin” 与分支名字 “master” 一样，在 Git 中并没有任何特别的含义一样。 同时 “master” 是当你运行 git init 时默认的起始分支名字，原因仅仅是它的广泛使用， “origin” 是当你运行 git clone 时默认的远程仓库名字。 如果你运行 git clone -o booyah，那么你默认的远程分支名字将会是 booyah/master。  </p></li><li><p>油猴怎么用，非常简单，我经常用一些小插件，比如谷歌翻译，哔哩哔哩下载助手，其实它们都是内置了脚本的，而油猴正是一个脚本管理插件，可以有很多功能，以后我会看看自己写个脚本。我下载了它里面比较好的几个脚本：<img src="/github/script.jpg" class=""></p></li></ul>]]></content>
+    <content type="html"><![CDATA[<ul><li>有一种消极的说法，生活原本是苦痛的，遇到的朋友，吃过的美食,收获的爱都是人生的止痛剂。<h1 id="ENVI-5-3安装"><a href="#ENVI-5-3安装" class="headerlink" title="ENVI 5.3安装"></a>ENVI 5.3安装</h1></li><li>{hi，这是我用百度网盘分享的内容~复制这段内容打开「百度网盘」APP即可获取<br>链接:<a href="https://pan.baidu.com/s/1NbbU76LZmGAHJlpo-6WUgw?pwd=7pm1">https://pan.baidu.com/s/1NbbU76LZmGAHJlpo-6WUgw?pwd=7pm1</a><br>提取码:7pm1<br>}</li><li>常规步骤，然后复制<img src="/github/copy.jpg" class=""></li></ul><ul><li>到<img src="/github/paste.jpg" class=""></li></ul><ul><li>最后用文件夹里的license5.3.lic文件可以激活，然后复制idl.dll文件<img src="/github/idl.jpg" class=""></li></ul><ul><li>到安装文件夹下<img src="/github/idl2.jpg" class=""></li></ul><h1 id="github连接超时"><a href="#github连接超时" class="headerlink" title="github连接超时"></a>github连接超时</h1><p>要用管理员权限打开cmd，然后进入hosts文件，修改<img src="/github/hosts.jpg" class=""></p><ul><li>进入这个网址得到github对应的地址 <a href="https://ipaddress.com/website/www.github.com">https://ipaddress.com/website/www.github.com</a></li><li>修改hosts文件，在末尾加上类似一个ip 一个domain的形式就可以了<figure class="highlight accesslog"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><pre><code class="hljs accesslog"><span class="hljs-number">140.82.113.3</span>  github.com    <br><span class="hljs-number">192.30.253.113</span>  www.github.com<br></code></pre></td></tr></table></figure></li><li>cmd中输入ipconfig/flushdns刷新dns</li><li>什么原理 Domain name system <img src="/github/dns.png" class=""></li></ul><ul><li>git拉取</li><li><p>“origin” 并无特殊含义<br>远程仓库名字 “origin” 与分支名字 “master” 一样，在 Git 中并没有任何特别的含义一样。 同时 “master” 是当你运行 git init 时默认的起始分支名字，原因仅仅是它的广泛使用， “origin” 是当你运行 git clone 时默认的远程仓库名字。 如果你运行 git clone -o booyah，那么你默认的远程分支名字将会是 booyah/master。  </p></li><li><p>油猴怎么用，非常简单，我经常用一些小插件，比如谷歌翻译，哔哩哔哩下载助手，其实它们都是内置了脚本的，而油猴正是一个脚本管理插件，可以有很多功能，以后我会看看自己写个脚本。我下载了它里面比较好的几个脚本：<img src="/github/script.jpg" class=""></p></li></ul>]]></content>
     
     
     
