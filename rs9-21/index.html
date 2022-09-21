@@ -16,18 +16,27 @@
   <meta name="author" content="吴蒙蔚">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="rs_digital_img">
-<meta property="og:url" content="https://vernalswind.github.io/rs-digital-img/index.html">
+    <meta name="description" content="用的是Python语言和gdal库，效果为 数据来源是USGS，位置是北京，可以看到西北有张家口，我的家乡~ 导入gdal包下载gdal包还有numpy，因为我的python是3.9版本，所以直接pip install numpy老出错，所以，可以直接进入这个网站然后在win+r中输入cmd打开命令行，再进入Python的包的安装文件夹，pip install +轮子的文件名，可以看到安装成功，如">
+<meta property="og:type" content="article">
+<meta property="og:title" content="遥感影像处理9.21作业">
+<meta property="og:url" content="https://vernalswind.github.io/rs9-21/index.html">
 <meta property="og:site_name" content="mengwei">
+<meta property="og:description" content="用的是Python语言和gdal库，效果为 数据来源是USGS，位置是北京，可以看到西北有张家口，我的家乡~ 导入gdal包下载gdal包还有numpy，因为我的python是3.9版本，所以直接pip install numpy老出错，所以，可以直接进入这个网站然后在win+r中输入cmd打开命令行，再进入Python的包的安装文件夹，pip install +轮子的文件名，可以看到安装成功，如">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-09-04T08:02:30.000Z">
-<meta property="article:modified_time" content="2022-09-04T08:02:30.802Z">
+<meta property="og:image" content="https://vernalswind.github.io/rs9-21/beking.jpg">
+<meta property="og:image" content="https://vernalswind.github.io/rs9-21/numpy.jpg">
+<meta property="og:image" content="https://vernalswind.github.io/rs9-21/numpy1.jpg">
+<meta property="og:image" content="https://vernalswind.github.io/rs9-21/gdal.jpg">
+<meta property="og:image" content="https://vernalswind.github.io/rs9-21/stat.jpg">
+<meta property="article:published_time" content="2022-09-21T03:29:46.000Z">
+<meta property="article:modified_time" content="2022-09-21T04:39:09.169Z">
 <meta property="article:author" content="吴蒙蔚">
+<meta property="article:tag" content="homework">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://vernalswind.github.io/rs9-21/beking.jpg">
   
   
-  <title>rs_digital_imgarticle - sitemengwei</title>
+  <title>遥感影像处理9.21作业article - sitemengwei</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
@@ -189,7 +198,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="rs_digital_img">
+            <span class="h2" id="subtitle" title="遥感影像处理9.21作业">
               
             </span>
 
@@ -208,7 +217,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      0 字
+      1.9k 字
     </span>
   
 
@@ -217,7 +226,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1 分钟
+      16 分钟
     </span>
   
 
@@ -254,21 +263,46 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">rs_digital_img</h1>
+            <h1 style="display: none">遥感影像处理9.21作业</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：17 days ago
+                  本文最后更新于：a few seconds ago
                 
               </p>
             
             <div class="markdown-body">
-              
+              <p>用的是Python语言和gdal库，效果为<img src="/rs9-21/beking.jpg" srcset="/img/loading.gif" lazyload class=""></p>
+<h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><p>来源是<a target="_blank" rel="noopener" href="https://earthexplorer.usgs.gov/">USGS</a>，位置是北京，可以看到西北有张家口，我的家乡~</p>
+<h2 id="导入gdal包"><a href="#导入gdal包" class="headerlink" title="导入gdal包"></a>导入gdal包</h2><p>下载gdal包还有numpy，因为我的python是3.9版本，所以直接pip install numpy老出错，所以，可以直接进入这个<a target="_blank" rel="noopener" href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy">网站</a><img src="/rs9-21/numpy.jpg" srcset="/img/loading.gif" lazyload class=""><br>然后在win+r中输入cmd打开命令行，再进入Python的包的安装文件夹，pip install +轮子的文件名，可以看到安装成功，如下图所示<br><img src="/rs9-21/numpy1.jpg" srcset="/img/loading.gif" lazyload class=""><br>GDAL同理<img src="/rs9-21/gdal.jpg" srcset="/img/loading.gif" lazyload class=""></p>
+<h1 id="导入包和指定landset文件夹所在位置"><a href="#导入包和指定landset文件夹所在位置" class="headerlink" title="导入包和指定landset文件夹所在位置"></a>导入包和指定landset文件夹所在位置</h1><figure class="highlight python"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></div></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> os<br><span class="hljs-keyword">from</span> osgeo <span class="hljs-keyword">import</span> gdal<br><br><span class="hljs-comment"># 当前所在路径</span><br>os.chdir(<span class="hljs-string">r&#x27;C:\Users\17503\Desktop\landset_data&#x27;</span>)<br>band1_fn = <span class="hljs-string">&#x27;LC08_L1TP_123032_20220910_20220914_02_T1_B1.TIF&#x27;</span><br>band2_fn = <span class="hljs-string">&#x27;LC08_L1TP_123032_20220910_20220914_02_T1_B2.TIF&#x27;</span><br>band3_fn = <span class="hljs-string">&#x27;LC08_L1TP_123032_20220910_20220914_02_T1_B3.TIF&#x27;</span><br></code></pre></td></tr></table></figure>
+<h3 id="打开蓝波段-在创建输出图像之前，你需要此波段对象，因为它具有输出文件所需要的基本信息（尺寸大小、投影、坐标等）。"><a href="#打开蓝波段-在创建输出图像之前，你需要此波段对象，因为它具有输出文件所需要的基本信息（尺寸大小、投影、坐标等）。" class="headerlink" title="打开蓝波段,在创建输出图像之前，你需要此波段对象，因为它具有输出文件所需要的基本信息（尺寸大小、投影、坐标等）。"></a>打开蓝波段,在创建输出图像之前，你需要此波段对象，因为它具有输出文件所需要的基本信息（尺寸大小、投影、坐标等）。</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">in_ds = gdal.Open(band1_fn)<br>in_band = in_ds.GetRasterBand(<span class="hljs-number">1</span>)<br></code></pre></td></tr></table></figure>
+<h3 id="使用GeoTIFF驱动程序创建新数据集"><a href="#使用GeoTIFF驱动程序创建新数据集" class="headerlink" title="使用GeoTIFF驱动程序创建新数据集"></a>使用GeoTIFF驱动程序创建新数据集</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">gtiff_driver = gdal.GetDriverByName(<span class="hljs-string">&#x27;GTiff&#x27;</span>)<br>out_ds = gtiff_driver.Create(<span class="hljs-string">&#x27;nat_color.tif&#x27;</span>,<br>         in_band.XSize, in_band.YSize, <span class="hljs-number">3</span>, in_band.DataType)<br>out_ds.SetProjection(in_ds.GetProjection())<br>out_ds.SetGeoTransform(in_ds.GetGeoTransform())<br></code></pre></td></tr></table></figure>
+<ul>
+<li>‘nat_color.tif’是要创建的数据集在当前文件夹下的路径。</li>
+<li>in_band.XSize是新数据集中的列数。</li>
+<li>in_band.YSize是新数据集中的行数。</li>
+<li>3是新数据集中的波段数，可以不写。默认值为1。</li>
+<li>in_band.DataType是将存储在新数据集中的数据类型。默认值为GDT_Byte。</li>
+</ul>
+<h3 id="读取第1波段数据"><a href="#读取第1波段数据" class="headerlink" title="读取第1波段数据"></a>读取第1波段数据</h3><p>因为Landsat图像的波段1是蓝色波段，你需要将其放入输出图像的第三个波段以获得RGB顺序的波段。接下来要做的是从out_ds获取第三个波段，然后使用WriteArray将in_data数组中的值复制到新数据集的第三个波段<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">in_data = in_band.ReadAsArray()<br>out_band = out_ds.GetRasterBand(<span class="hljs-number">3</span>)<br>out_band.WriteArray(in_data)<br></code></pre></td></tr></table></figure></p>
+<h1 id="读取第2波段数据"><a href="#读取第2波段数据" class="headerlink" title="读取第2波段数据"></a>读取第2波段数据</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python">in_ds = gdal.Open(band2_fn)<br>out_band = out_ds.GetRasterBand(<span class="hljs-number">2</span>)<br>out_band.WriteArray(in_ds.ReadAsArray())<br></code></pre></td></tr></table></figure>
+<h1 id="读取第3波段数据"><a href="#读取第3波段数据" class="headerlink" title="读取第3波段数据"></a>读取第3波段数据</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">out_ds.GetRasterBand(<span class="hljs-number">1</span>).WriteArray(<br>    gdal.Open(band3_fn).ReadAsArray())<br></code></pre></td></tr></table></figure>
+<h1 id="统计像元"><a href="#统计像元" class="headerlink" title="统计像元"></a>统计像元</h1><p>在计算统计数据之前，你必须确保数据已写入磁盘而不是仅缓存在内存中，因此这是对FlushCache的调用。然后循环遍历波段并计算每个波段的统计数据。将False传递给此函数会告诉你需要实际统计信息而不是估计值，它可能来自概览图层（尚不存在）或从像元子集中采样。如果估计值可以接受，那么你可以传递True；这也将使计算更快，因为不是每个像元都需要检查。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python">out_ds.FlushCache()<br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>):<br>    data=out_ds.GetRasterBand(i).ComputeStatistics(<span class="hljs-literal">False</span>)<br>    <span class="hljs-built_in">print</span>(data)<br></code></pre></td></tr></table></figure><br><img src="/rs9-21/stat.jpg" srcset="/img/loading.gif" lazyload class=""></p>
+<h1 id="抽样构建金字塔"><a href="#抽样构建金字塔" class="headerlink" title="抽样构建金字塔"></a>抽样构建金字塔</h1><p>遥感领域许多图片的大小动辄上G。读取、显示这样的图片极为耗时，影响用户体验。金字塔技术在几乎不降低显示效果的前提下，大大降低了图片处理的耗时，改善了用户体验<a target="_blank" rel="noopener" href="https://blog.csdn.net/liji_digital/article/details/104248253">Tutorial</a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">out_ds.BuildOverviews(<span class="hljs-string">&#x27;average&#x27;</span>, [<span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">16</span>, <span class="hljs-number">32</span>])<br><span class="hljs-keyword">del</span> out_ds<br></code></pre></td></tr></table></figure></p>
+
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/homework/">homework</a>
+                    
+                  </div>
                 
               </div>
               
@@ -277,18 +311,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/runtime/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">runtime</span>
-                        <span class="visible-mobile">Vorheriger</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/github/">
-                        <span class="hidden-mobile">最近的防忘小tip</span>
+                      <a href="/runtime/">
+                        <span class="hidden-mobile">runtime</span>
                         <span class="visible-mobile">Nächster</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
