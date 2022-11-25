@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>双阳区——Global Mapper和</title>
+    <title>双阳区——Global Mapper和Blender制作地形模型</title>
     <link href="/blender-sy/"/>
     <url>/blender-sy/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h1 id="Blender"><a href="#Blender" class="headerlink" title="Blender"></a>Blender</h1>]]></content>
     
     
     
@@ -106,11 +106,11 @@
   
   
   <entry>
-    <title>Global Mapper 安装</title>
+    <title>Global Mapper 安装（补充Arcgis pro安装）</title>
     <link href="/cartest/"/>
     <url>/cartest/</url>
     
-    <content type="html"><![CDATA[<p>感谢秘鲁的一个网站<br><a href="https://geoprogramasperu.blogspot.com/2014/04/global-mapper-1615141312-patchkeygencrack.html。">https://geoprogramasperu.blogspot.com/2014/04/global-mapper-1615141312-patchkeygencrack.html。</a></p><p>然鹅，我他妈就进去了一次它给的谷歌云盘的网址，我没有点保存，直接下载了，下载之后呢，看教程视频，看着看着眼前一黑，谷歌云盘把我ban了，还好它里面压缩包里有个编辑txt文件讲了。不知道自己是幸运还是不幸了。”我把文件上传到联想乐云了“<br><a href="https://lecloud.lenovo.com/share/4XvKDTCpgA2nwPk9D">https://lecloud.lenovo.com/share/4XvKDTCpgA2nwPk9D</a> </p><p> <img src="https://img-blog.csdnimg.cn/79f1e89adbe9471bb70d6d1f9e036eaa.png" alt=""></p><p><img src="https://img-blog.csdnimg.cn/95097b2c6e8541a5aaca24db0c564065.png" alt="">接下来打开压缩包，解压缩，点exe文件，一路默认，最后不要RUN，点finish，然后找到patch文件夹，复制那俩文件，粘贴到哪里呢？注意，进入桌面找到Global mapper的快捷方式，右键进入它的路径文件夹，粘贴到这里，点击替换。</p><p>patch完了以后要把license文件夹保存好，记住它的位置。然后会出来一个激活license的界面让你填写用户名和密码啥的，你如果安装过ENVI应该知道通过本地文件激活license，你就去下面找，activate from……啥的，我记不清了，然后点进License文件夹，找到就好了。<br><img src="https://img-blog.csdnimg.cn/6c29092eecf04c4d99d0b29d6368b37f.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>感谢秘鲁的一个网站<br><a href="https://geoprogramasperu.blogspot.com/2014/04/global-mapper-1615141312-patchkeygencrack.html。">https://geoprogramasperu.blogspot.com/2014/04/global-mapper-1615141312-patchkeygencrack.html。</a></p><p>然鹅，我他妈就进去了一次它给的谷歌云盘的网址，我没有点保存，直接下载了，下载之后呢，看教程视频，看着看着眼前一黑，谷歌云盘把我ban了，还好它里面压缩包里有个编辑txt文件讲了。不知道自己是幸运还是不幸了。”我把文件上传到联想乐云了“<br><a href="https://lecloud.lenovo.com/share/4XvKDTCpgA2nwPk9D">https://lecloud.lenovo.com/share/4XvKDTCpgA2nwPk9D</a> </p><p> <img src="https://img-blog.csdnimg.cn/79f1e89adbe9471bb70d6d1f9e036eaa.png" alt=""></p><p><img src="https://img-blog.csdnimg.cn/95097b2c6e8541a5aaca24db0c564065.png" alt="">接下来打开压缩包，解压缩，点exe文件，一路默认，最后不要RUN，点finish，然后找到patch文件夹，复制那俩文件，粘贴到哪里呢？注意，进入桌面找到Global mapper的快捷方式，右键进入它的路径文件夹，粘贴到这里，点击替换。</p><p>patch完了以后要把license文件夹保存好，记住它的位置。然后会出来一个激活license的界面让你填写用户名和密码啥的，你如果安装过ENVI应该知道通过本地文件激活license，你就去下面找，activate from……啥的，我记不清了，然后点进License文件夹，找到就好了。<img src="https://raw.githubusercontent.com/VernalsWind/obsidian/main/20221125125157.png" alt="offline Activation"><br><img src="https://img-blog.csdnimg.cn/6c29092eecf04c4d99d0b29d6368b37f.png" alt=""></p><p>CSDN审核挺严，通过不了居然。</p><h1 id="Arcgis-pro"><a href="#Arcgis-pro" class="headerlink" title="Arcgis pro"></a>Arcgis pro</h1><h2 id="下载安装包："><a href="#下载安装包：" class="headerlink" title="下载安装包："></a>下载安装包：</h2><p><a href="https://lecloud.lenovo.com/share/P288Ds9Zc8PbZjKY">https://lecloud.lenovo.com/share/P288Ds9Zc8PbZjKY</a></p><p>一路默认就好，到最后不要RUN，finish安装</p><p>把这俩文件复制替换到这个文件夹<br><img src="https://raw.githubusercontent.com/VernalsWind/obsidian/main/20221125130149.png" alt="把这俩文件复制替换到"></p><p><img src="https://raw.githubusercontent.com/VernalsWind/obsidian/main/20221125130324.png" alt="这个文件夹"><br>然后就可以运行Arcgis Pro了,亲测有效。</p>]]></content>
     
     
     
