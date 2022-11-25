@@ -11,6 +11,24 @@
   </url>
   
   <url>
+    <loc>https://vernalswind.github.io/landuse/</loc>
+    
+    <lastmod>2022-11-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vernalswind.github.io/blender-sy/</loc>
+    
+    <lastmod>2022-11-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vernalswind.github.io/github/</loc>
     
     <lastmod>2022-11-25</lastmod>
@@ -185,15 +203,6 @@
     <loc>https://vernalswind.github.io/project/</loc>
     
     <lastmod>2022-05-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vernalswind.github.io/landuse/</loc>
-    
-    <lastmod>2022-05-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
