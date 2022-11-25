@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vernalswind.github.io/stata/</loc>
+    
+    <lastmod>2022-11-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vernalswind.github.io/blender-sy/</loc>
+    
+    <lastmod>2022-11-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vernalswind.github.io/cartest/</loc>
     
     <lastmod>2022-11-25</lastmod>
@@ -12,15 +30,6 @@
   
   <url>
     <loc>https://vernalswind.github.io/landuse/</loc>
-    
-    <lastmod>2022-11-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vernalswind.github.io/blender-sy/</loc>
     
     <lastmod>2022-11-25</lastmod>
     
@@ -50,15 +59,6 @@
     <loc>https://vernalswind.github.io/hydrology/</loc>
     
     <lastmod>2022-11-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vernalswind.github.io/stata/</loc>
-    
-    <lastmod>2022-11-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -283,6 +283,13 @@
   
   <url>
     <loc>https://vernalswind.github.io/tags/statistics/</loc>
+    <lastmod>2022-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://vernalswind.github.io/tags/dem/</loc>
     <lastmod>2022-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
