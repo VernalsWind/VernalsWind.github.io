@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vernalswind.github.io/ENVI_fusion/</loc>
+    <loc>https://vernalswind.github.io/ENVI-fusion/</loc>
     
     <lastmod>2022-11-30</lastmod>
     
@@ -299,6 +299,13 @@
   
   <url>
     <loc>https://vernalswind.github.io/tags/dem/</loc>
+    <lastmod>2022-11-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://vernalswind.github.io/tags/envi/</loc>
     <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

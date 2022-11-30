@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>ENVI_fusion</title>
+    <link href="/ENVI-fusion/"/>
+    <url>/ENVI-fusion/</url>
+    
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/VernalsWind/obsidian/main/Pasted%20image%2020221130105428.png" alt=""><br><img src="https://raw.githubusercontent.com/VernalsWind/obsidian/main/Pasted%20image%2020221130132410.png" alt=""></p><div style="position:relative;width:fit-content;height:fit-content;">            <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/zGNGxzkaMdM?utm_source=embed&utm_medium=embed&utm_campaign=watch">                <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />            </a>            <iframe allowfullscreen style="border:none" src="https://clipchamp.com/watch/zGNGxzkaMdM/embed" width="640" height="360"></iframe>        </div>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>envi</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>双阳区——Global Mapper和Blender制作地形模型</title>
     <link href="/blender-sy/"/>
     <url>/blender-sy/</url>
@@ -17,19 +36,6 @@
       <tag>dem</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>landset多光谱数据和全色波段数据融合</title>
-    <link href="/ENVI_fusion/"/>
-    <url>/ENVI_fusion/</url>
-    
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/VernalsWind/obsidian/main/Pasted%20image%2020221130105428.png" alt=""><video crossorigin="anonymous" preload="auto" src="blob:https://www.bilibili.com/f46fd1ad-ebd1-4fed-b3c5-1a8ba50fec6d"></video>landset<br><img src="https://raw.githubusercontent.com/VernalsWind/obsidian/main/Pasted%20image%2020221130132410.png" alt=""></p><div style="position:relative;width:fit-content;height:fit-content;">            <a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/zGNGxzkaMdM?utm_source=embed&utm_medium=embed&utm_campaign=watch">                <img style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />            </a>            <iframe allowfullscreen style="border:none" src="https://clipchamp.com/watch/zGNGxzkaMdM/embed" width="640" height="360"></iframe>        </div>]]></content>
-    
-    
     
   </entry>
   
