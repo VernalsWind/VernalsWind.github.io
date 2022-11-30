@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vernalswind.github.io/ENVI_fusion/</loc>
+    
+    <lastmod>2022-11-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vernalswind.github.io/biogeo/</loc>
+    
+    <lastmod>2022-11-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vernalswind.github.io/blender-sy/</loc>
     
     <lastmod>2022-11-25</lastmod>
@@ -104,15 +122,6 @@
     <loc>https://vernalswind.github.io/geodata/</loc>
     
     <lastmod>2022-06-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vernalswind.github.io/biogeo/</loc>
-    
-    <lastmod>2022-06-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -247,7 +256,7 @@
 
   <url>
     <loc>https://vernalswind.github.io/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -255,42 +264,42 @@
   
   <url>
     <loc>https://vernalswind.github.io/tags/note/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/tags/study/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/tags/assignment/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/tags/homework/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/tags/statistics/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/tags/dem/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -299,21 +308,21 @@
   
   <url>
     <loc>https://vernalswind.github.io/categories/UAV-RS/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/categories/matlab/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vernalswind.github.io/categories/GIS/</loc>
-    <lastmod>2022-11-25</lastmod>
+    <lastmod>2022-11-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
