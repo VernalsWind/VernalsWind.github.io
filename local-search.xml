@@ -84,7 +84,7 @@
     <link href="/runtime/"/>
     <url>/runtime/</url>
     
-    <content type="html"><![CDATA[<ul><li>This application provides access to the 700 individual 10-meter resolution GeoTIFF files for each year of the Sentinel-2 Land Use/Land Cover map produced by Esri, Microsoft, and Impact Observatory. The map is derived from ESA Sentinel-2 imagery and is a composite of land use/land cover predictions for 9 classes for each year from 2017-2021.</li><li>Downloaded files have no style applied. To replicate the colors and class names, apply this <a href="https://arcgis.com/home/item.html?id=b69d5c69960c491b839fa7e06c4d2d44">raster function</a>.此步骤较为精细，详情可以问QQ1750383096</li><li>打开转换好的栅格的属性表，看到Count，是栅格数量，因为分辨率是10m，所以每个栅格大小是100$\mathsf{m^2}$,Count值乘100就是以平方米为单位的面积</li><li>我用了Zonal Geometry计算面积也是可以的，得到约1988平方公里，占总面积的2.4%，与官方数据2.65%近似，有一定误差</li></ul>]]></content>
+    <content type="html"><![CDATA[<img src="/runtime/landcover.png" class=""><img src="/runtime/landcover1.png" class=""><ul><li>This application provides access to the 700 individual 10-meter resolution GeoTIFF files for each year of the Sentinel-2 Land Use/Land Cover map produced by Esri, Microsoft, and Impact Observatory. The map is derived from ESA Sentinel-2 imagery and is a composite of land use/land cover predictions for 9 classes for each year from 2017-2021.</li><li>Downloaded files have no style applied. To replicate the colors and class names, apply this <a href="https://arcgis.com/home/item.html?id=b69d5c69960c491b839fa7e06c4d2d44">raster function</a>.此步骤较为精细，详情可以问QQ1750383096</li><li>打开转换好的栅格的属性表，看到Count，是栅格数量，因为分辨率是10m，所以每个栅格大小是100$m^2$,Count值乘100就是以平方米为单位的面积</li><li>我用了Zonal Geometry计算面积也是可以的，得到约1988平方公里，占总面积的2.4%，与官方数据2.65%近似，有一定误差</li></ul>]]></content>
     
     
     
